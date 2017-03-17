@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="math," />
 
 
 
@@ -87,12 +87,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="腾格里的天">
-<meta property="og:url" content="https://mactenngre.github.io/archives/index.html">
+<meta name="description" content="Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$一个$m \times n$的矩阵 ${\bf A}$(方阵或长方形矩阵)。若 ${\bf A}$ 不可逆，则 ${\bf Ax=0}$ 只有零解。若 ${\bf A}$ 不可逆则存在非零解。这些非零解属于 ${\bf A}$ 的 零空间(nullspace)。
+
+The nullspace of ${\bf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nullspace of A">
+<meta property="og:url" content="https://mactenngre.github.io/2016/11/24/linearAlgebar/3-2/index.html">
 <meta property="og:site_name" content="腾格里的天">
+<meta property="og:description" content="Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$一个$m \times n$的矩阵 ${\bf A}$(方阵或长方形矩阵)。若 ${\bf A}$ 不可逆，则 ${\bf Ax=0}$ 只有零解。若 ${\bf A}$ 不可逆则存在非零解。这些非零解属于 ${\bf A}$ 的 零空间(nullspace)。
+
+The nullspace of ${\bf">
+<meta property="og:updated_time" content="2016-11-26T03:19:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="腾格里的天">
+<meta name="twitter:title" content="Nullspace of A">
+<meta name="twitter:description" content="Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$一个$m \times n$的矩阵 ${\bf A}$(方阵或长方形矩阵)。若 ${\bf A}$ 不可逆，则 ${\bf Ax=0}$ 只有零解。若 ${\bf A}$ 不可逆则存在非零解。这些非零解属于 ${\bf A}$ 的 零空间(nullspace)。
+
+The nullspace of ${\bf">
 
 
 
@@ -120,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://mactenngre.github.io/archives/"/>
+  <link rel="canonical" href="https://mactenngre.github.io/2016/11/24/linearAlgebar/3-2/"/>
 
 
 
 
 
-  <title> 归档 | 腾格里的天 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> Nullspace of A | 腾格里的天 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,7 +161,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left  page-archive  ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -255,408 +265,260 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 12 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/24/linearAlgebar/3-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Nullspace of A
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-24T20:40:12+09:00">
+                2016-11-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Liner-Algebra/" itemprop="url" rel="index">
+                    <span itemprop="name">Liner Algebra</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Liner-Algebra/3-2-Nullspace-of-bf-A-Solving-bf-Ax-0/" itemprop="url" rel="index">
+                    <span itemprop="name">3.2 Nullspace of ${\bf A}:$ Solving ${\bf Ax=0}$</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/11/24/linearAlgebar/3-2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/24/linearAlgebar/3-2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2016/11/24/linearAlgebar/3-2/" class="leancloud_visitors" data-flag-title="Nullspace of A">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <h2 id="Nullspace-of-bf-A-Solving-bf-Ax-0"><a href="#Nullspace-of-bf-A-Solving-bf-Ax-0" class="headerlink" title="Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$"></a>Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$</h2><p>一个$m \times n$的矩阵 ${\bf A}$(方阵或长方形矩阵)。若 ${\bf A}$ 不可逆，则 ${\bf Ax=0}$ 只有零解。若 ${\bf A}$ 不可逆则存在非零解。这些非零解属于 ${\bf A}$ 的 <strong>零空间(nullspace)</strong>。</p>
+<blockquote>
+<p>The nullspace of ${\bf A}$ consists of all solutions to ${\bf Ax=0}$. <strong>These vectors x are in ${\bf R}^n$</strong>.The nullspace containing all solutions of ${\bf Ax=0}$ is denoted by ${\bf N(A)}$.</p>
+</blockquote>
+<p>${\bf Ax=0}$ 的解向量构成一个子空间。因为解满足子空间的两条性质。例如，${\bf Ax=0}$，${\bf Ay=0}$ 那么，${\bf A(x+y)=0}$。$c{\bf A}{\bf x=0}$。因此，${\bf x+y}$ 和️ $c{\bf x}$ 都在nullspace内。</p>
+<blockquote>
+<ul>
+<li>要注意 ${\bf A}$ 的nullspace构成一个 ${\bf R}^{n}$ 的子空间。</li>
+<li>${\bf A}$ 的列向量构成一个 ${\bf R}^{m}$ 的子空间。</li>
+</ul>
+</blockquote>
+<h4 id="特解-special-solution"><a href="#特解-special-solution" class="headerlink" title="特解(special solution)"></a>特解(special solution)</h4><span>${\bf A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 6 \\ \end{bmatrix}$</span><!-- Has MathJax -->方程 ${\bf Ax=0}$ 的解可以用特解表示。首先化简矩阵成为行最简。<br><span>$$$$
+\begin{align}
+x_{1}+2x_{2} &amp; =0 \\
+{\bf 0} &amp; = 0
+\end{align}
+$$$$</span><!-- Has MathJax -->
+<p>实际上，上面的方程组只有一个方程。方程2是方程1的两倍。这两个方程都在 ${\bf A}$ 的 nullspace 上面。此方中， nullspace是一条线。<br>我们取线上特殊的一个点。若<span>$x_{2}＝1$</span><!-- Has MathJax -->，那么<span>$x_{1}＝－2$</span><!-- Has MathJax -->。我们称这个解为 <strong>特解(special solution)</strong>。 那么，其他全部在这条直线上的解，都是特解 $(-2, 1)$ 的倍数(线性组合)。</p>
+<blockquote>
+<ul>
+<li>The nullspace consists of all combinations of the special solutions.<br>$$特解的全部线性组合构成了nullspace。$$</li>
+</ul>
+</blockquote>
+<h4 id="Pivot-and-Free-variable"><a href="#Pivot-and-Free-variable" class="headerlink" title="Pivot and Free variable"></a>Pivot and Free variable</h4><p>求矩阵$A = \begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix}$的nullspace。令，<span>$\begin{bmatrix}1 &amp; 2 &amp; 3 \end{bmatrix}\begin{bmatrix}x \\ y \\ z \end{bmatrix}= 0$</span><!-- Has MathJax -->。那么特解为:<br><span>$$s_{1}=\begin{bmatrix}-2 \\ 1 \\ 0 \end{bmatrix}
+\ ,
+s_{2}=\begin{bmatrix}-3 \\ 0 \\ 1 \end{bmatrix}$$</span><!-- Has MathJax --></p>
+<p>$\begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix}$中第一列中不为零的元素称为<strong>pivot</strong>。在矩阵的列和行中首个不为零的元素为pivot。也就是说pivot由上三角矩阵确定。<br>因此，第一个元素不是自由变量。我们选取后两个元素为自由变量，因此存在两个特解。分别使这两个自由变量等于1和0。从而求出特解。</p>
+<blockquote>
+<ul>
+<li>矩阵的列数一定时，行数是nullsapce的限制条件。行数越多，限制条件也就越多。当行数大于列数时，可能不存在自由变量。当不存在自由变量时，${\bf Ax=0}$ 便没有特解，只有零解。</li>
+<li>矩阵行数一定。当列数大于行数时至少存在一个自由变量。</li>
+</ul>
+</blockquote>
+<p>我们可以通过行变换来获得上三角矩阵。并且可以进一步化简上三角矩阵。</p>
+<blockquote>
+<ol>
+<li>使pivot上面的元素为零</li>
+<li>使pivot位置的元素为1</li>
+</ol>
+</blockquote>
+<p>这样化简的矩阵称为 <strong>行最简(reduced row echelon form R)</strong>。解方程的步骤可以分为两步</p>
+<ol>
+<li>利用行变换化简消元，使矩阵变成行最简形式。</li>
+<li>确定pivot和自由变量。给自由变量付值(1 or 0)。回带自由变量求出pivot。</li>
+</ol>
+<h4 id="小节"><a href="#小节" class="headerlink" title="小节"></a>小节</h4><p>当 ${\bf Ax=0}$ 只有零解时，nullspace是 ${\bf Z}$。这是一个重要的信号，矩阵 ${\bf A}$ 中的列向量线性无关。以及揭示了其他重要的性质关于基，维度等。</p>
+<p>${\bf Ax=0}$的完全解是由特解的线性组合来表达的。特解属于矩阵$A$的nullspace空间，特解的线性组合填满了整个nullspace。从而构成了${\bf Ax=0}$的完全解。</p>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/math/" rel="tag"># math</a>
+          
         </div>
       
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/15/MachineLearning/ML3/" itemprop="url">
-              
-                <span itemprop="name">机器学习基础篇之三</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-15T20:56:19+09:00"
-              content="2017-03-15" >
-          03-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/02/MachineLearning/ML2/" itemprop="url">
-              
-                <span itemprop="name">机器学习基础篇之二</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-02T21:15:35+09:00"
-              content="2017-03-02" >
-          03-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/02/26/MachineLearning/ML1/" itemprop="url">
-              
-                <span itemprop="name">机器学习基础篇之一</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-02-26T20:50:17+09:00"
-              content="2017-02-26" >
-          02-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/02/20/MachineLearning/Ensemble-Methods/" itemprop="url">
-              
-                <span itemprop="name">Ensemble Methods</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-02-20T16:06:19+09:00"
-              content="2017-02-20" >
-          02-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
 
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/22/linearAlgebar/3-1/" rel="next" title="Spaces of Vectors">
+                <i class="fa fa-chevron-left"></i> Spaces of Vectors
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/20/MachineLearning/Ensemble-Methods/" rel="prev" title="Ensemble Methods">
+                Ensemble Methods <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
         </div>
       
-      
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/24/linearAlgebar/3-2/" itemprop="url">
-              
-                <span itemprop="name">Nullspace of A</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-24T20:40:12+09:00"
-              content="2016-11-24" >
-          11-24
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/22/linearAlgebar/3-1/" itemprop="url">
-              
-                <span itemprop="name">Spaces of Vectors</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-22T13:01:58+09:00"
-              content="2016-11-22" >
-          11-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/19/SQLite/index/" itemprop="url">
-              
-                <span itemprop="name">SQLite</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-19T00:07:10+09:00"
-              content="2016-11-19" >
-          11-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/18/SQLite/SQLite3/" itemprop="url">
-              
-                <span itemprop="name">SQLite3 之三 数据插入实例</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-18T23:18:37+09:00"
-              content="2016-11-18" >
-          11-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/18/SQLite/SQLite2/" itemprop="url">
-              
-                <span itemprop="name">SQLite3 之二 新建数据库</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-18T21:39:34+09:00"
-              content="2016-11-18" >
-          11-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/18/SQLite/SQLite1/" itemprop="url">
-              
-                <span itemprop="name">SQLite3 之一简介</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-18T20:37:07+09:00"
-              content="2016-11-18" >
-          11-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
+    </div>
+  </div>
 
           
           </div>
@@ -664,6 +526,27 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <!-- 多说评论框 start -->
+    	<div class="ds-thread" data-thread-key="<%- page.path %>" data-title="<%- page.title %>" data-url="<%- page.permalink %>"></div> 
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+      <script type="text/javascript">
+      var duoshuoQuery = {short_name:"duoshuomact"};
+    	 (function() {
+    		  var ds = document.createElement('script');
+    		  ds.type = 'text/javascript';ds.async = true;
+    		  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    		  ds.charset = 'UTF-8';
+    		  (document.getElementsByTagName('head')[0]
+    		    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    	  })();
+    	  </script>
+      <!-- 多说公共JS代码 end -->
+    
+  </div>
+
 
         </div>
         
@@ -683,8 +566,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -746,6 +638,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Nullspace-of-bf-A-Solving-bf-Ax-0"><span class="nav-number">1.</span> <span class="nav-text">Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特解-special-solution"><span class="nav-number">1.0.1.</span> <span class="nav-text">特解(special solution)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Pivot-and-Free-variable"><span class="nav-number">1.0.2.</span> <span class="nav-text">Pivot and Free variable</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#小节"><span class="nav-number">1.0.3.</span> <span class="nav-text">小节</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -858,11 +766,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
@@ -914,26 +820,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 

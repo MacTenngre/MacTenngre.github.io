@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="数据库," />
+  <meta name="keywords" content="math," />
 
 
 
@@ -87,19 +87,16 @@
 
 
 
-<meta name="description" content="SQLite3简介SQLite3 是一个轻量，高速的数据库。与许多其它数据库管理系统不同，SQLite不是一个客户端/服务器结构的数据库引擎，而是被集成在用户程序中。因此，不必配置服务器等诸多复杂的设定。如果配合python一同使用，会让你的工作更加有效。
-SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—DB Browser for SQLite">
+<meta name="description" content="向量空间(Spaces of Vectors)${\bf R}^n$ 空间(Spaces)包含了全部含有$n$个元素的列向量$v$。$v$中的元素全部是实数。空间这个概念要求我们考虑这个空间内的全部向量。例如 ${\bf R}^2$ 表示$xy$平面，当我们提及 ${\bf R}^2$ 时，就要考虑在平面内的全部向量。同理 ${\bf R}^3$ 空间。特别的 ${\bf R}^1$ 空间是一直线">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SQLite3 之一简介">
-<meta property="og:url" content="https://mactenngre.github.io/2016/11/18/SQLite/SQLite1/index.html">
+<meta property="og:title" content="Spaces of Vectors">
+<meta property="og:url" content="https://mactenngre.github.io/2016/11/22/linearAlgebar/3-1/index.html">
 <meta property="og:site_name" content="腾格里的天">
-<meta property="og:description" content="SQLite3简介SQLite3 是一个轻量，高速的数据库。与许多其它数据库管理系统不同，SQLite不是一个客户端/服务器结构的数据库引擎，而是被集成在用户程序中。因此，不必配置服务器等诸多复杂的设定。如果配合python一同使用，会让你的工作更加有效。
-SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—DB Browser for SQLite">
-<meta property="og:updated_time" content="2017-03-16T13:11:38.000Z">
+<meta property="og:description" content="向量空间(Spaces of Vectors)${\bf R}^n$ 空间(Spaces)包含了全部含有$n$个元素的列向量$v$。$v$中的元素全部是实数。空间这个概念要求我们考虑这个空间内的全部向量。例如 ${\bf R}^2$ 表示$xy$平面，当我们提及 ${\bf R}^2$ 时，就要考虑在平面内的全部向量。同理 ${\bf R}^3$ 空间。特别的 ${\bf R}^1$ 空间是一直线">
+<meta property="og:updated_time" content="2016-12-16T14:21:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SQLite3 之一简介">
-<meta name="twitter:description" content="SQLite3简介SQLite3 是一个轻量，高速的数据库。与许多其它数据库管理系统不同，SQLite不是一个客户端/服务器结构的数据库引擎，而是被集成在用户程序中。因此，不必配置服务器等诸多复杂的设定。如果配合python一同使用，会让你的工作更加有效。
-SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—DB Browser for SQLite">
+<meta name="twitter:title" content="Spaces of Vectors">
+<meta name="twitter:description" content="向量空间(Spaces of Vectors)${\bf R}^n$ 空间(Spaces)包含了全部含有$n$个元素的列向量$v$。$v$中的元素全部是实数。空间这个概念要求我们考虑这个空间内的全部向量。例如 ${\bf R}^2$ 表示$xy$平面，当我们提及 ${\bf R}^2$ 时，就要考虑在平面内的全部向量。同理 ${\bf R}^3$ 空间。特别的 ${\bf R}^1$ 空间是一直线">
 
 
 
@@ -127,13 +124,13 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
 
 
 
-  <link rel="canonical" href="https://mactenngre.github.io/2016/11/18/SQLite/SQLite1/"/>
+  <link rel="canonical" href="https://mactenngre.github.io/2016/11/22/linearAlgebar/3-1/"/>
 
 
 
 
 
-  <title> SQLite3 之一简介 | 腾格里的天 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> Spaces of Vectors | 腾格里的天 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +269,7 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/18/SQLite/SQLite1/">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/22/linearAlgebar/3-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tenngre">
@@ -293,7 +290,7 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
             
             
               
-                SQLite3 之一简介
+                Spaces of Vectors
               
             
           </h1>
@@ -308,8 +305,8 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-18T20:37:07+09:00">
-                2016-11-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-22T13:01:58+09:00">
+                2016-11-22
               </time>
             
 
@@ -331,8 +328,8 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/SQLite3/" itemprop="url" rel="index">
-                    <span itemprop="name">SQLite3</span>
+                  <a href="/categories/Liner-Algebra/" itemprop="url" rel="index">
+                    <span itemprop="name">Liner Algebra</span>
                   </a>
                 </span>
 
@@ -342,8 +339,8 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/SQLite3/SQLite3-之一/" itemprop="url" rel="index">
-                    <span itemprop="name">SQLite3 之一</span>
+                  <a href="/categories/Liner-Algebra/3-1-Spaces-of-Vectors/" itemprop="url" rel="index">
+                    <span itemprop="name">3.1 Spaces of Vectors</span>
                   </a>
                 </span>
 
@@ -360,8 +357,8 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/11/18/SQLite/SQLite1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/18/SQLite/SQLite1/" itemprop="commentCount"></span>
+                <a href="/2016/11/22/linearAlgebar/3-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/22/linearAlgebar/3-1/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -369,7 +366,7 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
 
           
           
-             <span id="/2016/11/18/SQLite/SQLite1/" class="leancloud_visitors" data-flag-title="SQLite3 之一简介">
+             <span id="/2016/11/22/linearAlgebar/3-1/" class="leancloud_visitors" data-flag-title="Spaces of Vectors">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -398,13 +395,59 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
       
 
       
-        <h2 id="SQLite3简介"><a href="#SQLite3简介" class="headerlink" title="SQLite3简介"></a>SQLite3简介</h2><p>SQLite3 是一个轻量，高速的数据库。与许多其它数据库管理系统不同，SQLite不是一个客户端/服务器结构的数据库引擎，而是被集成在用户程序中。因此，不必配置服务器等诸多复杂的设定。如果配合<strong>python</strong>一同使用，会让你的工作更加有效。</p>
-<h2 id="SQLite3的安装"><a href="#SQLite3的安装" class="headerlink" title="SQLite3的安装"></a>SQLite3的安装</h2><h6 id="DB-Browser-for-SQLite"><a href="#DB-Browser-for-SQLite" class="headerlink" title="DB Browser for SQLite"></a>DB Browser for SQLite</h6><p>首先推荐安装一个SQLite3的软件—<em>DB Browser for SQLite</em>。该软件方便对数据的浏览和编辑，并且可以配合python一起使用。现有Mac版和Windows版。软件具体介绍参见GitHub官方主页。</p>
-<p>下载地址：<a href="http://sqlitebrowser.org/" target="_blank" rel="external">http://sqlitebrowser.org/</a></p>
-<p>自python2.7版本之后，SQLite3都包含在了python的标准模块中。当然python之前的版本，Mac用户和Windows用户可以通过Terminal或者控制台命令<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install sqlite</div></pre></td></tr></table></figure></p>
-<p>进行安装。</p>
-<p>安装完成后可以进入python输入<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> sqlite3</div></pre></td></tr></table></figure></p>
-<p>进行安装确认。</p>
+        <h2 id="向量空间-Spaces-of-Vectors"><a href="#向量空间-Spaces-of-Vectors" class="headerlink" title="向量空间(Spaces of Vectors)"></a>向量空间(Spaces of Vectors)</h2><p>${\bf R}^n$ 空间(Spaces)包含了全部含有$n$个元素的列向量$v$。$v$中的元素全部是实数。空间这个概念要求我们考虑这个空间内的全部向量。例如 ${\bf R}^2$ 表示$xy$平面，当我们提及 ${\bf R}^2$ 时，就要考虑在平面内的全部向量。同理 ${\bf R}^3$ 空间。特别的 ${\bf R}^1$ 空间是一直线，例如x轴。</p>
+<p>向量能否构成一个向量空间要看这些向量是否满足以下8条基本定律:</p>
+<ol>
+<li>$\bf{\nu}+\bf{\omega}=\bf{\omega}+{\bf \nu}$ 符合加法交换律</li>
+<li>$({\bf\nu}+{\bf \mu})+{\bf\omega}={\bf\omega}+({\bf \mu}+{\bf \nu})$ 加法结合律</li>
+<li>存在唯一的 ${\bf 0}$ 向量，对任意 ${\bf \omega}$ 满足 ${\bf \omega} + {\bf 0}= {\bf \omega}$ 。</li>
+<li>存在唯一的逆元 ${\bf \omega}+(-{\bf \omega})={\bf 0}$</li>
+<li>$1 \times {\bf \mu= \mu}$</li>
+<li>$(c_1c_2){\bf \nu}=c_1(c_2{\bf \nu})$</li>
+<li>$c({\bf \nu}+{\bf \omega})=c{\bf \nu}+c{\bf \omega}$ 数乘的乘法分配律</li>
+<li>${\bf \omega}(c+b)={\bf \omega}c+{\bf \omega}b$ 向量与数乘的乘法分配律</li>
+</ol>
+<p>例题: 如果规定向量之和 ${\bf f(x) + g(x)}=f(g(x))$，g(x)=x。那么零向量是什么？保持规则6 $c{\bf f(x)}$ 不变，那么破坏了上述那两条？</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">f(x) + g(x) = f(g(x))  f(x) - f(x) = -g(x)= -x</div><div class="line">then x <span class="keyword">is</span> the zero vector.</div><div class="line">f(f^&#123;<span class="number">-1</span>&#125;)=x, f+f^&#123;<span class="number">-1</span>&#125;=f(f^&#123;<span class="number">-1</span>&#125;) = x</div><div class="line">exist two vectors that plus f(x) = zero vector</div><div class="line">thus there <span class="keyword">is</span> no inverse vector. Also <span class="keyword">break</span> the rule <span class="number">4.</span></div></pre></td></tr></table></figure>
+<p>反函数可能不存在。所以第1条和第4条破坏。</p>
+<h3 id="数乘-Scalar-multiply-与向量加法"><a href="#数乘-Scalar-multiply-与向量加法" class="headerlink" title="数乘(Scalar multiply)与向量加法"></a>数乘(Scalar multiply)与向量加法</h3><p>数乘是指向量内的全体元素，同时乘以<strong>标量(Scalar)</strong>。 向量加法是两个向量对应的元素相加。向量的数乘和向量加法的结果称之为<strong>向量的线性组合</strong>。</p>
+<p><strong><em>我们可以相加任意两个在$R^n$空间的向量，并且任意的向量可以乘以任意标量。</em></strong></p>
+<p>换句话说，两个向量相加或乘以一个标量后的新向量仍然在同一个空间。我们可以称向量数乘与向量加法是<strong>封闭的</strong>。</p>
+<p>以下是3个非 ${\bf R}^n$ 空间的例子</p>
+<ol>
+<li>${\bf M}$ 由全体$2 \times 2$ 实矩阵构成的空间。</li>
+<li>${\bf F}$ 由所有实方程$f(x)$组成的空间</li>
+<li>${\bf Z}$ 只含有零向量的空间</li>
+</ol>
+<p>我们可以发现，向量加法和向量数乘在上面的三个空间是成立的。要注意的是$Z$只含有一个零向量，并非一无所有。任何空间都离不开<strong>零向量</strong>。</p>
+<p>方程空间(Function space) ${\bf F}$ 是一个无穷空间。一个较小的方程空间是 ${\bf P}$ 或 ${\bf P_n}$，它包括了所有的多项式 $a_0+ a_1x + \dots + a_nx^n$。</p>
+<h3 id="子空间-Subspace"><a href="#子空间-Subspace" class="headerlink" title="子空间(Subspace)"></a>子空间(Subspace)</h3><p>大部分时间，我们只考虑列向量。在 ${\bf R}^n$ 内部存在重要的空间，他们是 ${\bf R}^n$ 的<strong>子空间</strong>。例如，在三维空间内的一个过<strong>原点</strong>的平面是三维空间的一个子空间。注意：不过原点的平面不是三位空间的子空间，因为1，这个平面不包含零向量；2，任意向量的数乘和向量加法在这个平面内不封。例如，向量(2，3，1)和向量(3，4，1)构成一个原始平面，但相加后(5,7,2)却不在原始的平面内。上述向量的数乘的结果依然不在原始的平面。</p>
+<p>在三维空间内的平面不是 ${\bf R}^2$ 空间(尽管看上去很像二维空间)。在三维空间内的平面拥有三个元素，因此他们属于 ${\bf R}^3$。平面是 ${\bf R}^3$ 内部的一个向量空间。</p>
+<p>这也阐述了线性代数的一个重要的基本原理。过原点的一个平面是整体三维空间的一个子空间。</p>
+<blockquote>
+<ul>
+<li><p><strong>定义</strong>:子空间是由空间内的向量(包括零向量)组成的一个集合。它必须满足两个条件: 如果 ${\bf \nu}$ 和 ${\bf \omega}$ 是子空间内的向量，$c$是任意的标量，那么必定满足以下两个规则</p>
+<p><strong>Ⅰ</strong>. ${\bf \nu + \omega}$ 在子空间内</p>
+<p><strong>Ⅱ</strong>. $c{\bf \nu}$ 在子空间内</p>
+</li>
+</ul>
+</blockquote>
+<p>即向量加法和向量数乘是在子空间内部封闭的。<strong>向量全部的线性组合仍然在子空间内部</strong>。所有的操作(算数操作)都遵守主空间的规则(封闭)，因此也就自动满足了8条基本准则的要求。<br>${\bf R}^3$空间的所有可能的子空间</p>
+<p>${\bf L}$ 过原点的一条直线(0,0,0)</p>
+<p>${\bf R}^3$ 三维空间自己本身</p>
+<p>${\bf P}$ 过原点的一个平面</p>
+<p>${\bf Z}$ 零向量（0，0，0）</p>
+<p>如果我们要求只保留平面或者直线的一部分，那么被保留的部分将不在是子空间。</p>
+<p>在全部的 ${\bf M}$ 空间中存在两个子空间。</p>
+<p>全部的上三角矩阵 $({\bf U})$ $\begin{bmatrix} a &amp; b \ 0 &amp; d \ \end{bmatrix}$ 和全部对角矩阵 $({\bf D})$  $\begin{bmatrix} a &amp; 0 \ 0 &amp; d \ \end{bmatrix}$。<br>任意两个上三角矩阵相加，结果仍然是上三角矩阵。任意两个对角矩阵相加，结果依然是对角矩阵。同时对角矩阵也是上三角矩阵的一个子空间(满足向量加法和数乘的封闭性)。单位矩阵是对角矩阵的一个子空间。</p>
+<h3 id="列向量空间"><a href="#列向量空间" class="headerlink" title="列向量空间"></a>列向量空间</h3><p>我们试图解决 ${\bf Ax=b}$。如果 ${\bf A}$ 不可逆，那么我们可以解决某些 ${\bf b}$，有些则不能。我们希望能够将 ${\bf b}$ 表示成 ${\bf Ax}$ 的形式。而这些被表示的 ${\bf b}$ 构成了 ${\bf Ax}$ 的列空间。</p>
+<p>为了能够表示所有的 ${\bf b}$，我们将取得所有可能的 ${\bf x}$，从而我们构成了 ${\bf A}$ 的列向量空间。由此可知，当 ${\bf Ax=b}$ 有解时，${\bf b}$ 一定在 ${\bf A}$ 的列空间内。换句话说，${\bf Ax=b}$ 就是由 ${\bf A}$ 的线性组合表示 ${\bf b}$。</p>
+<p>假设有一个 $m \times n$ 的矩阵，构成这个矩阵的列向量有$m$个元素。因此列向量属于 ${\bf R}^m$。A的列空间就是 ${\bf R}^m$ 的一个子空间。这个列空间满足规则 Ⅰ 和 Ⅱ</p>
+<h3 id="小节"><a href="#小节" class="headerlink" title="小节"></a>小节</h3><p>${\bf R}^n$ 包括了所有的列向量，每个列向量内有 $n$ 个实数元素。</p>
+<p>${\bf M, \ F,\ Z}$ 是向量空间。</p>
+<p>一个子空间包含向量 ${\bf \nu, \omega}$ 一定包含他们所有的线性组合 $c{\bf \nu}+c{\bf \omega}$</p>
+<p>矩阵 ${\bf A}$ 的列向量的线性组合构成了列空间。列空间是由列向量扩张(span)而来。</p>
+<p>只有当 ${\bf b}$ 在线行空间内时，${\bf Ax=b}$ 有解。</p>
 
       
     </div>
@@ -434,7 +477,7 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
       
         <div class="post-tags">
           
-            <a href="/tags/数据库/" rel="tag"># 数据库</a>
+            <a href="/tags/math/" rel="tag"># math</a>
           
         </div>
       
@@ -447,8 +490,8 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/14/linearAlgebar/3-5/" rel="next" title="3.5 Independence, Basis and Dimension">
-                <i class="fa fa-chevron-left"></i> 3.5 Independence, Basis and Dimension
+              <a href="/2016/11/19/SQLite/index/" rel="next" title="SQLite">
+                <i class="fa fa-chevron-left"></i> SQLite
               </a>
             
           </div>
@@ -457,8 +500,8 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/11/18/SQLite/SQLite2/" rel="prev" title="SQLite3 之二 新建数据库">
-                SQLite3 之二 新建数据库 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/11/24/linearAlgebar/3-2/" rel="prev" title="Nullspace of A">
+                Nullspace of A <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -605,7 +648,7 @@ SQLite3的安装DB Browser for SQLite首先推荐安装一个SQLite3的软件—
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#SQLite3简介"><span class="nav-number">1.</span> <span class="nav-text">SQLite3简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQLite3的安装"><span class="nav-number">2.</span> <span class="nav-text">SQLite3的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#DB-Browser-for-SQLite"><span class="nav-number">2.0.0.0.1.</span> <span class="nav-text">DB Browser for SQLite</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#向量空间-Spaces-of-Vectors"><span class="nav-number">1.</span> <span class="nav-text">向量空间(Spaces of Vectors)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数乘-Scalar-multiply-与向量加法"><span class="nav-number">1.1.</span> <span class="nav-text">数乘(Scalar multiply)与向量加法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子空间-Subspace"><span class="nav-number">1.2.</span> <span class="nav-text">子空间(Subspace)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列向量空间"><span class="nav-number">1.3.</span> <span class="nav-text">列向量空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小节"><span class="nav-number">1.4.</span> <span class="nav-text">小节</span></a></li></ol></li></ol></div>
             
 
           </div>

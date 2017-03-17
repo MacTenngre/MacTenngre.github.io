@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="math," />
 
 
 
@@ -87,12 +87,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="腾格里的天">
-<meta property="og:url" content="https://mactenngre.github.io/categories/机器学习/机器学习基础篇之二/index.html">
+<meta name="description" content="本节主要讨论 子空间(subspace) 真实维度。一个由$n$个列向量组成的 $m \times n$的矩阵。其真实的维度(Dimension) 却并不一定是$n$。而是由线性无关的列向量(Independent columns) 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 基(basis)。
+(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间。换句话说，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3.5 Independence, Basis and Dimension">
+<meta property="og:url" content="https://mactenngre.github.io/2016/11/14/linearAlgebar/3-5/index.html">
 <meta property="og:site_name" content="腾格里的天">
+<meta property="og:description" content="本节主要讨论 子空间(subspace) 真实维度。一个由$n$个列向量组成的 $m \times n$的矩阵。其真实的维度(Dimension) 却并不一定是$n$。而是由线性无关的列向量(Independent columns) 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 基(basis)。
+(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间。换句话说，">
+<meta property="og:updated_time" content="2016-11-14T08:29:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="腾格里的天">
+<meta name="twitter:title" content="3.5 Independence, Basis and Dimension">
+<meta name="twitter:description" content="本节主要讨论 子空间(subspace) 真实维度。一个由$n$个列向量组成的 $m \times n$的矩阵。其真实的维度(Dimension) 却并不一定是$n$。而是由线性无关的列向量(Independent columns) 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 基(basis)。
+(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间。换句话说，">
 
 
 
@@ -120,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="https://mactenngre.github.io/categories/机器学习/机器学习基础篇之二/"/>
+  <link rel="canonical" href="https://mactenngre.github.io/2016/11/14/linearAlgebar/3-5/"/>
 
 
 
 
 
-  <title> 分类: 机器学习基础篇之二 | 腾格里的天 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> 3.5 Independence, Basis and Dimension | 腾格里的天 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,7 +158,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left  ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -255,47 +262,226 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        机器学习基础篇之二
-        <small>分类</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/02/MachineLearning/ML2/" itemprop="url">
-              
-                <span itemprop="name">机器学习基础篇之二</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-02T21:15:35+09:00"
-              content="2017-03-02" >
-          03-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/14/linearAlgebar/3-5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                3.5 Independence, Basis and Dimension
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-14T16:37:47+09:00">
+                2016-11-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Liner-Algebra/" itemprop="url" rel="index">
+                    <span itemprop="name">Liner Algebra</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Liner-Algebra/3-5-Independence-Basis-and-Dimension/" itemprop="url" rel="index">
+                    <span itemprop="name">3.5 Independence, Basis and Dimension</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/11/14/linearAlgebar/3-5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/14/linearAlgebar/3-5/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2016/11/14/linearAlgebar/3-5/" class="leancloud_visitors" data-flag-title="3.5 Independence, Basis and Dimension">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本节主要讨论 <strong>子空间(subspace)</strong> 真实维度。一个由$n$个列向量组成的 $m \times n$的矩阵。其真实的<strong>维度(Dimension)</strong> 却并不一定是$n$。而是由<strong>线性无关的列向量(Independent columns)</strong> 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 <strong>基(basis)</strong>。</p>
+<p><strong>(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间</strong>。换句话说，空间内的每一个向量都是这些 <strong>线性无关向量</strong> 的线性组合。</p>
+<h2 id="linear-Independence"><a href="#linear-Independence" class="headerlink" title="linear Independence"></a>linear Independence</h2><p>所谓线性独立，就是指 ${\bf Ax}＝0$只有$0$解。${\bf A}$ 的全部列向量的线性组合，只能给出<strong>零向量(zero vector)</strong>。也就是说 ${\bf A}$ 的 <strong>零空间(nullspace)</strong> 只包含唯一一个零向量。</p>
+<p>例子</p>
+<ol>
+<li>三个不在同一平面内的向量一定线性无关。</li>
+<li>如果三个向量在同一平面内他们线性相关。</li>
+</ol>
+<p>下面给出一个更广泛的定义，它可以应对在任何空间内的任意维度的向量组。如果我们将这些向量组视为列向量的话，那么下面的定义与上面的便完全相同。</p>
+<p><strong><em>定义：当且仅当向量组的线性组合只能给出零向量时，向量组是线性无关的。</em></strong><br>$$<br>x_1 v_1+x_2 v_2 +\dots +x_n v_n = {\bf 0};  \ x_1=x_2=\dots=x_n=0<br>$$</p>
+<p>我们可以说一个向量组（矩阵的列／行向量组）是线性无关的，而不能说这个矩阵是线性无关的。从nullspace的角度来看就是，nullspace内存在一个非零向量，那么列向量组线性相关。</p>
+<p>进而可以得出一个概念－－－<strong>FULL column rank</strong>，即 ${\bf A}$ 的列向量组一定是线性无关的，当矩阵的秩（rank）$r=n$。其中 $n$是列向量的个数。因为 ${\bf A}$ 中有 $n$个 $pivots$（阶梯矩阵中行中第一个不为零的数）。这样就没有自由变量，从而只有零解。</p>
+<p>根据上面的概念，我们还可以推出另一个概念。与上面的相反。就是当 ${\bf A}$ 的行的数目 $m$ 小于 列的数目 $n$ 时。构成 ${\bf A}$ 的向量组一定是<strong>线性相关的</strong>。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/math/" rel="tag"># math</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/1970/01/01/index/" rel="next" title="Markdown的写作技巧">
+                <i class="fa fa-chevron-left"></i> Markdown的写作技巧
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/18/SQLite/SQLite1/" rel="prev" title="SQLite3 之一简介">
+                SQLite3 之一简介 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -303,6 +489,27 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <!-- 多说评论框 start -->
+    	<div class="ds-thread" data-thread-key="<%- page.path %>" data-title="<%- page.title %>" data-url="<%- page.permalink %>"></div> 
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+      <script type="text/javascript">
+      var duoshuoQuery = {short_name:"duoshuomact"};
+    	 (function() {
+    		  var ds = document.createElement('script');
+    		  ds.type = 'text/javascript';ds.async = true;
+    		  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    		  ds.charset = 'UTF-8';
+    		  (document.getElementsByTagName('head')[0]
+    		    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    	  })();
+    	  </script>
+      <!-- 多说公共JS代码 end -->
+    
+  </div>
+
 
         </div>
         
@@ -322,8 +529,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -385,6 +601,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#linear-Independence"><span class="nav-number">1.</span> <span class="nav-text">linear Independence</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -497,6 +729,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
@@ -547,26 +783,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
