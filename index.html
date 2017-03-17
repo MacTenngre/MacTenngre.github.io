@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -15,6 +15,9 @@
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
 
 
 
@@ -98,12 +101,12 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post"},
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
-      author: '博主'
+      userId: '6398329596617426000',
+      author: 'Tenngre'
     },
     algolia: {
       applicationID: '',
@@ -123,7 +126,7 @@
 
 
 
-  <title> 腾格里的天 </title>
+  <title> 腾格里的天 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -139,36 +142,44 @@
 
 
 
+
+
+
+
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left 
    page-home 
  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">腾格里的天</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">腾格里的天</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
   </div>
-  <p class="site-subtitle"></p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -198,22 +209,32 @@
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
           </a>
         </li>
       
@@ -246,20 +267,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2017/03/15/MachineLearning/ML3/">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2017/03/15/MachineLearning/ML3/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Tenngre">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="腾格里的天">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="腾格里的天" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
+    </span>
 
     
       <header class="post-header">
@@ -281,32 +299,34 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-15T20:56:19+09:00">
-              2017-03-15
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-15T20:56:19+09:00">
+                2017-03-15
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2017-03-15T20:57:57+09:00">
-              2017-03-15
-            </time>
-
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/机器学习/" itemprop="url" rel="index">
@@ -318,7 +338,6 @@
                 
                   ， 
                 
-
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/机器学习/机器学习基础篇之三/" itemprop="url" rel="index">
@@ -328,27 +347,38 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-          
-
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/15/MachineLearning/ML3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/15/MachineLearning/ML3/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
              <span id="/2017/03/15/MachineLearning/ML3/" class="leancloud_visitors" data-flag-title="机器学习基础篇之三">
-               &nbsp; | &nbsp;
+               <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
           
 
           
@@ -371,7 +401,7 @@
           
           
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2017/03/15/MachineLearning/ML3/#more" rel="contents">
               阅读全文 &raquo;
             </a>
@@ -389,8 +419,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -413,20 +448,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2017/03/02/MachineLearning/ML2/">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2017/03/02/MachineLearning/ML2/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Tenngre">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="腾格里的天">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="腾格里的天" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
+    </span>
 
     
       <header class="post-header">
@@ -448,32 +480,34 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-02T21:15:35+09:00">
-              2017-03-02
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-02T21:15:35+09:00">
+                2017-03-02
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2017-03-16T22:11:38+09:00">
-              2017-03-16
-            </time>
-
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/机器学习/" itemprop="url" rel="index">
@@ -485,7 +519,6 @@
                 
                   ， 
                 
-
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/机器学习/机器学习基础篇之二/" itemprop="url" rel="index">
@@ -495,27 +528,38 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-          
-
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/02/MachineLearning/ML2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/02/MachineLearning/ML2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
              <span id="/2017/03/02/MachineLearning/ML2/" class="leancloud_visitors" data-flag-title="机器学习基础篇之二">
-               &nbsp; | &nbsp;
+               <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
           
 
           
@@ -538,10 +582,11 @@
           
 
 
-再上一篇中我们简单介绍了机器学习中几种常见并非常重要的方法。接下来，我们在本文将着重介绍监督式学习。并引入机器学习中的几个重要该概念 —— 训练数据(Training Data)， 目标方程(T
+再上一篇中我们简单介绍了机器学习中几种常见并非常重要的方法。接下来，我们在本文将着重介绍监督式学习。并引入机器学习中的几个重要该概念 —— 训练数据(Training Data)， 目标方程(Target Function) 和 假设空间(Hypotheses Space)。
+训练数据(Tra
           ...
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2017/03/02/MachineLearning/ML2/#more" rel="contents">
               阅读全文 &raquo;
             </a>
@@ -559,8 +604,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -583,20 +633,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2017/02/26/MachineLearning/ML1/">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2017/02/26/MachineLearning/ML1/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Tenngre">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="腾格里的天">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="腾格里的天" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
+    </span>
 
     
       <header class="post-header">
@@ -618,32 +665,34 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-26T20:50:17+09:00">
-              2017-02-26
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-26T20:50:17+09:00">
+                2017-02-26
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2017-03-16T15:38:42+09:00">
-              2017-03-16
-            </time>
-
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/机器学习/" itemprop="url" rel="index">
@@ -655,7 +704,6 @@
                 
                   ， 
                 
-
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/机器学习/机器学习基础篇之一/" itemprop="url" rel="index">
@@ -665,27 +713,38 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-          
-
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/02/26/MachineLearning/ML1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/26/MachineLearning/ML1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
              <span id="/2017/02/26/MachineLearning/ML1/" class="leancloud_visitors" data-flag-title="机器学习基础篇之一">
-               &nbsp; | &nbsp;
+               <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
           
 
           
@@ -705,10 +764,10 @@
       
         
           
-          机器学习 Machine Learning人工智能 (AI) 是英文 Artificial Intelligence 的缩写。机器学习 (ML) 是近年来人工智能实现的一个主要方向。人工智能的研究在8
+          机器学习 Machine Learning人工智能 (AI) 是英文 Artificial Intelligence 的缩写。机器学习 (ML) 是近年来人工智能实现的一个主要方向。人工智能的研究在80年代遭遇寒冬之后，终于随着人工神经网络(NN, Neural Network)的 反向传播算法(B
           ...
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2017/02/26/MachineLearning/ML1/#more" rel="contents">
               阅读全文 &raquo;
             </a>
@@ -726,8 +785,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -750,20 +814,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2017/02/20/MachineLearning/Ensemble-Methods/">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2017/02/20/MachineLearning/Ensemble-Methods/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Tenngre">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="腾格里的天">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="腾格里的天" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
+    </span>
 
     
       <header class="post-header">
@@ -785,43 +846,53 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-20T16:06:19+09:00">
-              2017-02-20
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-20T16:06:19+09:00">
+                2017-02-20
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2017-02-20T17:16:54+09:00">
-              2017-02-20
-            </time>
-
+            
           </span>
 
           
 
           
             
-          
-
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/02/20/MachineLearning/Ensemble-Methods/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/20/MachineLearning/Ensemble-Methods/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
              <span id="/2017/02/20/MachineLearning/Ensemble-Methods/" class="leancloud_visitors" data-flag-title="Ensemble Methods">
-               &nbsp; | &nbsp;
+               <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
           
 
           
@@ -841,10 +912,11 @@
       
         
           
-          集成算法 (Ensemble Methods)概述  集成算法的实现可以由一下三种方式123由多个不同的算法组成。使用多个相同类型的算法，但是每个算法的参数设定不同。将数据集合中的不同部分，分配到不同
-          ...
+          集成算法 (Ensemble Methods)概述  集成算法的实现可以由一下三种方式123由多个不同的算法组成。使用多个相同类型的算法，但是每个算法的参数设定不同。将数据集合中的不同部分，分配到不同的分类器中。
+
+          
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2017/02/20/MachineLearning/Ensemble-Methods/#more" rel="contents">
               阅读全文 &raquo;
             </a>
@@ -862,8 +934,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -886,20 +963,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/19/SQLite/index/">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/19/SQLite/index/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Tenngre">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="腾格里的天">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="腾格里的天" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
+    </span>
 
     
       <header class="post-header">
@@ -921,43 +995,53 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-19T00:07:10+09:00">
-              2016-11-19
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-19T00:07:10+09:00">
+                2016-11-19
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-19T12:00:13+09:00">
-              2016-11-19
-            </time>
-
+            
           </span>
 
           
 
           
             
-          
-
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/11/19/SQLite/index/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/19/SQLite/index/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
              <span id="/2016/11/19/SQLite/index/" class="leancloud_visitors" data-flag-title="SQLite">
-               &nbsp; | &nbsp;
+               <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
           
 
           
@@ -980,7 +1064,7 @@
           
           
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2016/11/19/SQLite/index/#more" rel="contents">
               阅读全文 &raquo;
             </a>
@@ -998,8 +1082,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1022,20 +1111,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/18/SQLite/SQLite3/">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/18/SQLite/SQLite3/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Tenngre">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="腾格里的天">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="腾格里的天" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
+    </span>
 
     
       <header class="post-header">
@@ -1057,32 +1143,34 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-18T23:18:37+09:00">
-              2016-11-18
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-18T23:18:37+09:00">
+                2016-11-18
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-26T10:50:34+09:00">
-              2016-11-26
-            </time>
-
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/SQLite3/" itemprop="url" rel="index">
@@ -1094,7 +1182,6 @@
                 
                   ， 
                 
-
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/SQLite3/SQLite3-之三-数据插入实例/" itemprop="url" rel="index">
@@ -1104,27 +1191,38 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-          
-
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/11/18/SQLite/SQLite3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/18/SQLite/SQLite3/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
              <span id="/2016/11/18/SQLite/SQLite3/" class="leancloud_visitors" data-flag-title="SQLite3 之三 数据插入实例">
-               &nbsp; | &nbsp;
+               <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
           
 
           
@@ -1153,10 +1251,10 @@ datetime
 random
 
 
-单行数据插入我们
+单行数据插入我们首先介绍单行数据插入，即每一次只向表格中插入一行数据。我们使用 time 和 datetime， 来
           ...
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2016/11/18/SQLite/SQLite3/#more" rel="contents">
               阅读全文 &raquo;
             </a>
@@ -1174,8 +1272,13 @@ random
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1198,20 +1301,17 @@ random
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/18/SQLite/SQLite2/">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/18/SQLite/SQLite2/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Tenngre">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="腾格里的天">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="腾格里的天" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
+    </span>
 
     
       <header class="post-header">
@@ -1233,32 +1333,34 @@ random
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-18T21:39:34+09:00">
-              2016-11-18
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-18T21:39:34+09:00">
+                2016-11-18
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-24T23:23:38+09:00">
-              2016-11-24
-            </time>
-
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/SQLite3/" itemprop="url" rel="index">
@@ -1270,7 +1372,6 @@ random
                 
                   ， 
                 
-
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/SQLite3/SQLite3-之二-新建数据库/" itemprop="url" rel="index">
@@ -1280,27 +1381,38 @@ random
 
                 
                 
-
               
             </span>
           
 
           
             
-          
-
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/11/18/SQLite/SQLite2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/18/SQLite/SQLite2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
              <span id="/2016/11/18/SQLite/SQLite2/" class="leancloud_visitors" data-flag-title="SQLite3 之二 新建数据库">
-               &nbsp; | &nbsp;
+               <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
           
 
           
@@ -1321,10 +1433,11 @@ random
         
           
           SQLite3 创建数据库现在，我们要建立一个联接SQLite3数据库的对象，通过操作这个对象对数据库进行操作。
-12import sqlite3conn = sqlite3.connect('exa
+12import sqlite3conn = sqlite3.connect('example.db')
+需要注意的是:如‘example.db’这个文件不存在，系统将自动创建一个文件。
           ...
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2016/11/18/SQLite/SQLite2/#more" rel="contents">
               阅读全文 &raquo;
             </a>
@@ -1342,8 +1455,13 @@ random
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1366,20 +1484,17 @@ random
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/18/SQLite/SQLite1/">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/18/SQLite/SQLite1/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Tenngre">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="腾格里的天">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="腾格里的天" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
+    </span>
 
     
       <header class="post-header">
@@ -1401,32 +1516,34 @@ random
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-18T20:37:07+09:00">
-              2016-11-18
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-18T20:37:07+09:00">
+                2016-11-18
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-24T23:23:40+09:00">
-              2016-11-24
-            </time>
-
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/SQLite3/" itemprop="url" rel="index">
@@ -1438,7 +1555,6 @@ random
                 
                   ， 
                 
-
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/SQLite3/SQLite3-之一/" itemprop="url" rel="index">
@@ -1448,27 +1564,38 @@ random
 
                 
                 
-
               
             </span>
           
 
           
             
-          
-
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/11/18/SQLite/SQLite1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/18/SQLite/SQLite1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
              <span id="/2016/11/18/SQLite/SQLite1/" class="leancloud_visitors" data-flag-title="SQLite3 之一简介">
-               &nbsp; | &nbsp;
+               <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
           
 
           
@@ -1488,10 +1615,11 @@ random
       
         
           
-          SQLite3简介SQLite3 是一个轻量，高速的数据库。与许多其它数据库管理系统不同，SQLite不是一个客户端/服务器结构的数据库引擎，而是被集成在用户程序中。因此，不必配置服务器等诸多复杂的设
+          SQLite3简介SQLite3 是一个轻量，高速的数据库。与许多其它数据库管理系统不同，SQLite不是一个客户端/服务器结构的数据库引擎，而是被集成在用户程序中。因此，不必配置服务器等诸多复杂的设定。如果配合python一同使用，会让你的工作更加有效。
+SQLite3的安装DB Browser 
           ...
           <!--noindex-->
-          <div class="post-more-link text-center">
+          <div class="post-button text-center">
             <a class="btn" href="/2016/11/18/SQLite/SQLite1/#more" rel="contents">
               阅读全文 &raquo;
             </a>
@@ -1509,8 +1637,13 @@ random
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1533,20 +1666,17 @@ random
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/2016/11/12/index/">
+    <link itemprop="mainEntityOfPage" href="https://mactenngre.github.io/1970/01/01/index/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Tenngre">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="腾格里的天">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="腾格里的天" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tenngre">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="腾格里的天">
+    </span>
 
     
       <header class="post-header">
@@ -1558,7 +1688,7 @@ random
             
               
                 
-                <a class="post-title-link" href="/2016/11/12/index/" itemprop="url">
+                <a class="post-title-link" href="/1970/01/01/index/" itemprop="url">
                   Markdown的写作技巧
                 </a>
               
@@ -1568,43 +1698,53 @@ random
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-12T23:41:16+09:00">
-              2016-11-12
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="1970-01-01T09:00:00+09:00">
+                1970-01-01
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-24T23:14:48+09:00">
-              2016-11-24
-            </time>
-
+            
           </span>
 
           
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/1970/01/01/index/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="1970/01/01/index/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
-
           
-          
-             <span id="/2016/11/12/index/" class="leancloud_visitors" data-flag-title="Markdown的写作技巧">
-               &nbsp; | &nbsp;
+             <span id="/1970/01/01/index/" class="leancloud_visitors" data-flag-title="Markdown的写作技巧">
+               <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
           
 
           
@@ -1625,11 +1765,11 @@ random
         
           
           Markdown下的Latex公式编辑简单介绍如何使Markdown能够按照Latex样式进行公式编辑。首先，我们默认大家都已经安装好了Hexo。只是对于数学公式的编辑进行介绍。
-在没有安装任何插件之
+在没有安装任何插件之前Hexo是无法将公式转换成Latex样式进的。解决办法是，安装hexo-math插件。打开term
           ...
           <!--noindex-->
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/11/12/index/#more" rel="contents">
+          <div class="post-button text-center">
+            <a class="btn" href="/1970/01/01/index/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1646,8 +1786,13 @@ random
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1665,7 +1810,7 @@ random
 
   
 
-
+          
           </div>
           
 
@@ -1694,32 +1839,41 @@ random
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="/images/avatar.png"
                alt="Tenngre" />
           <p class="site-author-name" itemprop="name">Tenngre</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
         </div>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/">
-              <span class="site-state-item-count">9</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
 
           
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
             <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">12</span>
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
           
 
           
+            
+            
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">4</span>
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1743,6 +1897,8 @@ random
 
 
       </section>
+
+      
 
       
 
@@ -1785,9 +1941,13 @@ random
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
   </div>
 
   
@@ -1807,6 +1967,7 @@ random
 
 
   
+
 
 
 
@@ -1859,14 +2020,38 @@ random
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"duoshuomacT"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
-	
+
+
+
+
+
 
 
 
@@ -1894,7 +2079,7 @@ random
         }
       });
     </script>
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
@@ -2003,7 +2188,24 @@ random
         showTime(Counter);
       }
     });
-  </script>
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
@@ -2011,6 +2213,8 @@ random
 
   
 
+
+  
 
 </body>
 </html>
