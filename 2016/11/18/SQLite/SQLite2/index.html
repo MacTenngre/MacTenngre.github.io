@@ -89,23 +89,23 @@
 
 <meta name="description" content="SQLite3 创建数据库
 现在，我们要建立一个联接SQLite3数据库的对象，通过操作这个对象对数据库进行操作。
-12import sqlite3conn = sqlite3.connect(&apos;example.db&apos;)
-需要注意的是:如‘example.db’这个文件不存在，系统将自动创建一个文件。数据就全部保存在‘example.db’这个文件内。同时，你也可以通过在文件名的前面添加指定路径，">
+import sqlite3conn = sqlite3.connect(&apos;example.db&apos;)
+需要注意的是:如‘example.db’这个文件不存在，系统将自动创建一个文件。数据就全部保存在‘example.db’这个文件内。同时，你也可以通过在文件名的前面添加指定路径，来保">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQLite3 之二 新建数据库">
 <meta property="og:url" content="https://mactenngre.github.io/2016/11/18/SQLite/SQLite2/index.html">
 <meta property="og:site_name" content="腾格里的天">
 <meta property="og:description" content="SQLite3 创建数据库
 现在，我们要建立一个联接SQLite3数据库的对象，通过操作这个对象对数据库进行操作。
-12import sqlite3conn = sqlite3.connect(&apos;example.db&apos;)
-需要注意的是:如‘example.db’这个文件不存在，系统将自动创建一个文件。数据就全部保存在‘example.db’这个文件内。同时，你也可以通过在文件名的前面添加指定路径，">
+import sqlite3conn = sqlite3.connect(&apos;example.db&apos;)
+需要注意的是:如‘example.db’这个文件不存在，系统将自动创建一个文件。数据就全部保存在‘example.db’这个文件内。同时，你也可以通过在文件名的前面添加指定路径，来保">
 <meta property="og:updated_time" content="2017-03-16T13:11:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQLite3 之二 新建数据库">
 <meta name="twitter:description" content="SQLite3 创建数据库
 现在，我们要建立一个联接SQLite3数据库的对象，通过操作这个对象对数据库进行操作。
-12import sqlite3conn = sqlite3.connect(&apos;example.db&apos;)
-需要注意的是:如‘example.db’这个文件不存在，系统将自动创建一个文件。数据就全部保存在‘example.db’这个文件内。同时，你也可以通过在文件名的前面添加指定路径，">
+import sqlite3conn = sqlite3.connect(&apos;example.db&apos;)
+需要注意的是:如‘example.db’这个文件不存在，系统将自动创建一个文件。数据就全部保存在‘example.db’这个文件内。同时，你也可以通过在文件名的前面添加指定路径，来保">
 
 
 
@@ -404,16 +404,21 @@
       
 
       
-        <h2 id="sqlite3-创建数据库">SQLite3 创建数据库</h2>
+        <h2>SQLite3 创建数据库</h2>
 <p>现在，我们要建立一个联接SQLite3数据库的对象，通过操作这个对象对数据库进行操作。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> sqlite3</div><div class="line">conn = sqlite3.connect(<span class="string">'example.db'</span>)</div></pre></td></tr></table></figure>
+<p><figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> sqlite3</div><div class="line">conn = sqlite3.connect(<span class="string">'example.db'</span>)</div></pre></td></tr></table></figure></p>
 <p><strong>需要注意的是</strong>:如‘example.db’这个文件不存在，系统将自动创建一个文件。数据就全部保存在‘example.db’这个文件内。同时，你也可以通过在文件名的前面<strong>添加指定路径</strong>，来保存文件到指定目录。</p>
-<p>文件的扩展名也可是<em>.sqlite，这样可以使用之前介绍的</em>DB Browser for SQLite*浏览数据。也可以创建一个在RAM内部的数据库，通过使用一个特殊的名字:memory:。</p>
+<p>文件的扩展名也可是*.sqlite，这样可以使用之前介绍的<em>DB Browser for SQLite</em>浏览数据。也可以创建一个在RAM内部的数据库，通过使用一个特殊的名字:memory:。</p>
 <p>下面我们要创建一个‘光标(Cursor)’对象，并使用‘光标(Cursor)’中的 <em>execute()</em> 方法来操作数据库。下面我们通过一个例子来展示如何创建一个名称为‘stocks’的表格，并且这个表格内包括的 ‘date text, time text, symbol text, random value’等项目来分别存放数据。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"># 创建光标</div><div class="line">c=conn.cursor()</div><div class="line"># 定义一个创建表格的函数</div><div class="line">def create_table():</div><div class="line">    c.execute'''CREATE TABLE IF NOT EXISTS stocks</div><div class="line">             (‘date text, time text, random value’)''')</div><div class="line">def insert_data():</div><div class="line">    # 插入数据</div><div class="line">    c.execute("INSERT INTO stocks VALUES ('2006-01-05','18:09:10', 35.14))</div><div class="line">    # 保存操作</div><div class="line">    conn.commit()</div><div class="line">    # 关闭与数据库的链接</div><div class="line">    conn.close()</div></pre></td></tr></table></figure>
+<p><figure class="highlight"><table><tr><td class="code"><pre><div class="line"># 创建光标</div><div class="line">c=conn.cursor()</div><div class="line"># 定义一个创建表格的函数</div><div class="line">def create_table():</div><div class="line">    c.execute'''CREATE TABLE IF NOT EXISTS stocks</div><div class="line">             (‘date text, time text, random value’)''')</div><div class="line">def insert_data():</div><div class="line">    # 插入数据</div><div class="line">    c.execute("INSERT INTO stocks VALUES ('2006-01-05','18:09:10', 35.14))</div><div class="line">    # 保存操作</div><div class="line">    conn.commit()</div><div class="line">    # 关闭与数据库的链接</div><div class="line">    conn.close()</div></pre></td></tr></table></figure></p>
 <p><strong>需要注意的</strong>的是在关闭与数据库链接之前，一定要确保你已经使用 <strong>conn.commit()</strong> 对数据库的操作保存了。否则，你的数据将会丢失！！！</p>
-<h2 id="小节">小节</h2>
-<p>本节我们介绍了SQlite的一些基本操作。 1. 如何使用SQLite创建一个数据库文件 2. 创建一个表格 3. 数据的插入和存储。</p>
+<h2>小节</h2>
+<p>本节我们介绍了SQlite的一些基本操作。</p>
+<ol>
+<li>如何使用SQLite创建一个数据库文件</li>
+<li>创建一个表格</li>
+<li>数据的插入和存储。</li>
+</ol>
 
       
     </div>
@@ -614,7 +619,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#sqlite3-创建数据库"><span class="nav-number">1.</span> <span class="nav-text">SQLite3 创建数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小节"><span class="nav-number">2.</span> <span class="nav-text">小节</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">SQLite3 创建数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">小节</span></a></li></ol></div>
             
 
           </div>

@@ -398,36 +398,31 @@
       
 
       
-        <h1 id="机器学习-machine-learning">机器学习 Machine Learning</h1>
+        <h1>机器学习 Machine Learning</h1>
 <p>人工智能 (<strong>AI</strong>) 是英文 Artificial Intelligence 的缩写。机器学习 (<strong>ML</strong>) 是近年来人工智能实现的一个主要方向。人工智能的研究在80年代遭遇寒冬之后，终于随着人工神经网络(<strong>NN</strong>, Neural Network)的 反向传播算法(<strong>BPNN</strong>, Back Propagation Neural Network)的发现迎来了新的发展高潮。在此基础之上又发展出了深度学习(Deep Learning)。</p>
 <p>我在此仅以一个学习者的角度，对机器学习(ML)中一些简单的背景知识进行介绍，并对其中的一些专业名词进行解释。希望可以提供给同我一样对人工智能抱有兴趣的读者一定的帮助。</p>
-<h2 id="简介">简介</h2>
+<h2>简介</h2>
 <p>如何能够让机器如同人类一样具有学习的能力一直是科学界梦寐以求的终极目标。学习是人类与生俱来的本能，可是要让机器学会学习，我们首先要了解什么是学习。我们先给出一个机器学习的定义</p>
 <blockquote>
-<p>对于某类任务 T (Tasks) 和性能度量 P (Performance)，如果一个计算机程序在任务 T 上以 P 衡量的性能随着经验 E (Experience)而自我完善，那么我们称这个计算机程序在从经验E中学习。<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>对于某类任务 T (Tasks) 和性能度量 P (Performance)，如果一个计算机程序在任务 T 上以 P 衡量的性能随着经验 E (Experience)而自我完善，那么我们称这个计算机程序在从经验E中学习。[^1]</p>
 </blockquote>
 <p>事实上，我们无时无刻都在学习(有意识或无意识的进行)。比如，当提起汽车这个名词时，你的脑海里会出现车的概念。或者，你是一个图书管理员，当你对书籍进行整理的时候，你会按照书籍的种类等特征( <strong>feature</strong>)进行分类。再比如，你是一位游泳运动员为了提高成绩，你会根据每次的训练结果调整游泳姿态。由上面的例子，我们可以归纳出机器学习的几个重要分类。机器学习中大量的算法都可以分别归到这几类中。</p>
-<ol style="list-style-type: decimal">
+<ol>
 <li>监督式学习 <strong>Supervised Learning</strong></li>
 <li>无监督式学习 <strong>Unsupervised Learning</strong></li>
 <li>强化学习 <strong>Reinforcement Learning</strong></li>
 <li>半监督式学习 <strong>Semisupervised Learning</strong></li>
 </ol>
-<h2 id="监督式学习-supervised-learning">监督式学习 <strong>Supervised Learning</strong></h2>
+<h2>监督式学习 <strong>Supervised Learning</strong></h2>
 <p>监督式学习是机器学习中最常见的一种。比如，当你教给一个小孩 “树” 这个概念时。你作为老师首先找到一棵 <strong>榆树</strong>，然后告诉这个小孩这是一棵 <strong>树</strong>。当这个小孩指着一棵高大的玉米并说这是一棵 <strong>树</strong> 时，你会纠正他告诉他这不是一棵树。当他指着一棵 <strong>杨树</strong> 并说这是一棵 <strong>树</strong> 时，你会告诉他他对了。这个过程就是监督式学习。</p>
 <p>当目标(上面提到的 <strong>树</strong>)是<strong>离散</strong>的情况，这个学习问题便是一个分类问题(Classification)。当目标是<strong>连续</strong>的情况时，这个学习问题便是一个回归问题(Regression)。对未来房价或者股票价格的预测都是回归问题。</p>
-<h2 id="无监督式学习-unsupervised-learning">无监督式学习 <strong>Unsupervised Learning</strong></h2>
+<h2>无监督式学习 <strong>Unsupervised Learning</strong></h2>
 <p>无监督式学习顾名思义，就是在没有老师教授的情况下，自我发现学习的一种情况。这也是机器学习中最高的境界(个人理解)。无监督式学习广泛应用在市场调查等，用来归纳出不同的客户群体。比如，网络公司会根据你的网页浏览习惯来对你进行分类，从而对你进行特定的广告投送(正所谓投其所好)。</p>
-<h2 id="强化学习-reinforcement-learning">强化学习 <strong>Reinforcement Learning</strong></h2>
+<h2>强化学习 <strong>Reinforcement Learning</strong></h2>
 <p>强化学习是 Sutton 和 Barto 于1998年提出的理论。是指在某种指定的环境下，寻找最优的解决方案从而获得最大的回报。这是一个循序渐进的过程，总要求下一步的回报要大于上一步的回报。</p>
-<h2 id="半监督式学习-semisupervised-learning">半监督式学习 <strong>Semisupervised Learning</strong></h2>
+<h2>半监督式学习 <strong>Semisupervised Learning</strong></h2>
 <p>半监督式学习是介于监督式学习与无监督式学习之间的一种学习方式。类似于电视节目中的猜字游戏，两个人一个人知道是什么字，另一个人去猜。但只能在猜错的情况下告诉猜题人他错了。也就是，我们只知道这个问题的答案是对或是错，并无法给出一个具体回答。</p>
-<div class="footnotes">
-<hr>
-<ol>
-<li id="fn1"><p>Mitchell, T. (1997). Machine Learning. McGraw Hill. p. 2. ISBN 0-07-042807-7<a href="#fnref1">↩</a></p></li>
-</ol>
-</div>
+<p>[^1]: Mitchell, T. (1997). Machine Learning. McGraw Hill. p. 2. ISBN 0-07-042807-7</p>
 
       
     </div>
@@ -628,7 +623,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#机器学习-machine-learning"><span class="nav-number">1.</span> <span class="nav-text">机器学习 Machine Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#监督式学习-supervised-learning"><span class="nav-number">1.2.</span> <span class="nav-text">监督式学习 Supervised Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#无监督式学习-unsupervised-learning"><span class="nav-number">1.3.</span> <span class="nav-text">无监督式学习 Unsupervised Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强化学习-reinforcement-learning"><span class="nav-number">1.4.</span> <span class="nav-text">强化学习 Reinforcement Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#半监督式学习-semisupervised-learning"><span class="nav-number">1.5.</span> <span class="nav-text">半监督式学习 Semisupervised Learning</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">机器学习 Machine Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">监督式学习 Supervised Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text">无监督式学习 Unsupervised Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.4.</span> <span class="nav-text">强化学习 Reinforcement Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.5.</span> <span class="nav-text">半监督式学习 Semisupervised Learning</span></a></li></ol></li></ol></div>
             
 
           </div>
