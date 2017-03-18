@@ -88,20 +88,20 @@
 
 
 <meta name="description" content="再上一篇中我们简单介绍了机器学习中几种常见并非常重要的方法。接下来，我们在本文将着重介绍监督式学习。并引入机器学习中的几个重要该概念 —— 训练数据(Training Data)， 目标方程(Target Function) 和 假设空间(Hypotheses Space)。
-训练数据(Training Data)数据是我们客观的衡量事物的尺度的体现。比如，一张桌具有长，宽，高三种不同的尺度">
+训练数据(Training Data)数据是我们客观的衡量事物的尺度的体现。比如，一张桌具有长，宽，高三种不同的尺度。如果">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习基础篇之二">
 <meta property="og:url" content="https://mactenngre.github.io/2017/03/02/MachineLearning/ML2/index.html">
 <meta property="og:site_name" content="腾格里的天">
 <meta property="og:description" content="再上一篇中我们简单介绍了机器学习中几种常见并非常重要的方法。接下来，我们在本文将着重介绍监督式学习。并引入机器学习中的几个重要该概念 —— 训练数据(Training Data)， 目标方程(Target Function) 和 假设空间(Hypotheses Space)。
-训练数据(Training Data)数据是我们客观的衡量事物的尺度的体现。比如，一张桌具有长，宽，高三种不同的尺度">
+训练数据(Training Data)数据是我们客观的衡量事物的尺度的体现。比如，一张桌具有长，宽，高三种不同的尺度。如果">
 <meta property="og:image" content="https://mactenngre.github.io/2017/03/02/MachineLearning/ML2/1.png">
 <meta property="og:image" content="https://mactenngre.github.io/2017/03/02/MachineLearning/ML2/2.png">
-<meta property="og:updated_time" content="2017-03-17T05:40:16.000Z">
+<meta property="og:updated_time" content="2017-03-18T04:28:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习基础篇之二">
 <meta name="twitter:description" content="再上一篇中我们简单介绍了机器学习中几种常见并非常重要的方法。接下来，我们在本文将着重介绍监督式学习。并引入机器学习中的几个重要该概念 —— 训练数据(Training Data)， 目标方程(Target Function) 和 假设空间(Hypotheses Space)。
-训练数据(Training Data)数据是我们客观的衡量事物的尺度的体现。比如，一张桌具有长，宽，高三种不同的尺度">
+训练数据(Training Data)数据是我们客观的衡量事物的尺度的体现。比如，一张桌具有长，宽，高三种不同的尺度。如果">
 <meta name="twitter:image" content="https://mactenngre.github.io/2017/03/02/MachineLearning/ML2/1.png">
 
 
@@ -401,10 +401,7 @@
       
 
       
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-<p>再上一篇中我们简单介绍了机器学习中几种常见并非常重要的方法。接下来，我们在本文将着重介绍监督式学习。并引入机器学习中的几个重要该概念 —— <strong>训练数据(Training Data)</strong>， <strong>目标方程(Target Function)</strong> 和 <strong>假设空间(Hypotheses Space)</strong>。</p>
+        <p>再上一篇中我们简单介绍了机器学习中几种常见并非常重要的方法。接下来，我们在本文将着重介绍监督式学习。并引入机器学习中的几个重要该概念 —— <strong>训练数据(Training Data)</strong>， <strong>目标方程(Target Function)</strong> 和 <strong>假设空间(Hypotheses Space)</strong>。</p>
 <h2 id="训练数据-Training-Data"><a href="#训练数据-Training-Data" class="headerlink" title="训练数据(Training Data)"></a>训练数据(Training Data)</h2><p>数据是我们客观的衡量事物的尺度的体现。比如，一张桌具有长，宽，高三种不同的尺度。如果分别有了这三个尺度的具体体现($120 \times 50 \times 60$) 那么我们就能够具体的表现这张桌子了。但是，这张桌子不仅有长，宽，高这三个度量尺度，还有颜色，材质，样式等等。这些尺度有一个统一，专业的称呼 — <strong>特征(Feature)</strong>。并且我们将与这些特征对应的事物(这里就是桌子)称为 <strong>标签(Label)</strong>。通常我们用向量 ${\bf x}=(x_{1},x_2,\cdots,x_n)$ 来表示特征，其中 $x_i，i \in(1,\cdots,n)$ 为具体的特征，如长，宽，高等的其中之一。用 $y$ 来表示标签。这样带有标签的数据就可以成对的表示为 $({\bf x},\ y)$。我们将这样的数据称为 — <strong>训练数据(Training Data)</strong>。</p>
 <h2 id="目标方程-Target-Function"><a href="#目标方程-Target-Function" class="headerlink" title="目标方程(Target Function)"></a>目标方程(Target Function)</h2><p>上面的例子，我们可以发现，在 <strong>特征</strong> 和 <strong>标签</strong> 之间存在着某种 <em>映射关系</em>。下图是 <strong>特征</strong> 与 <strong>标签</strong> 之间的映射关系。</p>
 <p><img src="/2017/03/02/MachineLearning/ML2/1.png" width="50%" height="50%"></p>
