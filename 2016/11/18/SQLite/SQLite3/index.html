@@ -87,7 +87,8 @@
 
 
 
-<meta name="description" content="SQLite3 数据库插入我们接下来实践一个向数据库插入数据的实例。这里我们需要用到python的库有4个，分别是：
+<meta name="description" content="SQLite3 数据库插入
+我们接下来实践一个向数据库插入数据的实例。这里我们需要用到python的库有4个，分别是：
 
 
 sqlite3
@@ -96,12 +97,14 @@ datetime
 random
 
 
-单行数据插入我们首先介绍单行数据插入，即每一次只向表格中插入一行数据。我们使用 time 和 datetime， 来获取系统时间和日期，使用 random 来生成随机数据。之后，我们编写一个数据插入函数，使它能够向数">
+单行数据插入
+我们首先介绍单行数据插入，即每一次只向表格中插入一行数据。我们使用 time 和 datetime， 来获取系统时间和日期，使用 random 来生成随机数据。之后，我们编写一个数据插入函数，使它能够">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQLite3 之三 数据插入实例">
 <meta property="og:url" content="https://mactenngre.github.io/2016/11/18/SQLite/SQLite3/index.html">
 <meta property="og:site_name" content="腾格里的天">
-<meta property="og:description" content="SQLite3 数据库插入我们接下来实践一个向数据库插入数据的实例。这里我们需要用到python的库有4个，分别是：
+<meta property="og:description" content="SQLite3 数据库插入
+我们接下来实践一个向数据库插入数据的实例。这里我们需要用到python的库有4个，分别是：
 
 
 sqlite3
@@ -110,11 +113,13 @@ datetime
 random
 
 
-单行数据插入我们首先介绍单行数据插入，即每一次只向表格中插入一行数据。我们使用 time 和 datetime， 来获取系统时间和日期，使用 random 来生成随机数据。之后，我们编写一个数据插入函数，使它能够向数">
+单行数据插入
+我们首先介绍单行数据插入，即每一次只向表格中插入一行数据。我们使用 time 和 datetime， 来获取系统时间和日期，使用 random 来生成随机数据。之后，我们编写一个数据插入函数，使它能够">
 <meta property="og:updated_time" content="2017-03-16T13:11:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQLite3 之三 数据插入实例">
-<meta name="twitter:description" content="SQLite3 数据库插入我们接下来实践一个向数据库插入数据的实例。这里我们需要用到python的库有4个，分别是：
+<meta name="twitter:description" content="SQLite3 数据库插入
+我们接下来实践一个向数据库插入数据的实例。这里我们需要用到python的库有4个，分别是：
 
 
 sqlite3
@@ -123,7 +128,8 @@ datetime
 random
 
 
-单行数据插入我们首先介绍单行数据插入，即每一次只向表格中插入一行数据。我们使用 time 和 datetime， 来获取系统时间和日期，使用 random 来生成随机数据。之后，我们编写一个数据插入函数，使它能够向数">
+单行数据插入
+我们首先介绍单行数据插入，即每一次只向表格中插入一行数据。我们使用 time 和 datetime， 来获取系统时间和日期，使用 random 来生成随机数据。之后，我们编写一个数据插入函数，使它能够">
 
 
 
@@ -422,7 +428,8 @@ random
       
 
       
-        <h2 id="SQLite3-数据库插入"><a href="#SQLite3-数据库插入" class="headerlink" title="SQLite3 数据库插入"></a>SQLite3 数据库插入</h2><p>我们接下来实践一个向数据库插入数据的实例。这里我们需要用到python的库有4个，分别是：</p>
+        <h2 id="sqlite3-数据库插入">SQLite3 数据库插入</h2>
+<p>我们接下来实践一个向数据库插入数据的实例。这里我们需要用到python的库有4个，分别是：</p>
 <blockquote>
 <ul>
 <li>sqlite3</li>
@@ -431,32 +438,38 @@ random
 <li>random</li>
 </ul>
 </blockquote>
-<h3 id="单行数据插入"><a href="#单行数据插入" class="headerlink" title="单行数据插入"></a>单行数据插入</h3><p>我们首先介绍单行数据插入，即每一次只向表格中插入一行数据。我们使用 <strong>time</strong> 和 <strong>datetime</strong>， 来获取系统时间和日期，使用 <strong>random</strong> 来生成随机数据。之后，我们编写一个数据插入函数，使它能够向数据库中插入系统时间，日期和随机生成的数据。具体代码如下:</p>
+<h3 id="单行数据插入">单行数据插入</h3>
+<p>我们首先介绍单行数据插入，即每一次只向表格中插入一行数据。我们使用 <strong>time</strong> 和 <strong>datetime</strong>， 来获取系统时间和日期，使用 <strong>random</strong> 来生成随机数据。之后，我们编写一个数据插入函数，使它能够向数据库中插入系统时间，日期和随机生成的数据。具体代码如下:</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">def insert_data():</div><div class="line">    Times = time.time()</div><div class="line">    Date = random.randrange(0,10) (str(datetime.datetime.fromtimestampt(times).strftime(%y-%m-%d %H:-%M:-%S, )))</div><div class="line">    Values =</div><div class="line">    c.execute("INSERT INTO stocks VALUES (date, time, values)", (?,?,?,), (times, data, values))</div><div class="line">    conn.commit()</div><div class="line">    conn.close()</div></pre></td></tr></table></figure>
 <p>我们具体解释一下插入代码</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">c.execute("INSERT INTO stocks VALUES (date, time, values)", (?,?,?,), (data, times, values))</div></pre></td></tr></table></figure>
-<ol>
+<ol style="list-style-type: decimal">
 <li>INSERT INTO stocks VALUES:表示向表格 stocks 中插入数据。</li>
 <li>(date, time, values): 括号中的项目分别对应表格 stocks 中的各个项目。项目名称一定要保持前后一致。例如,创建表格时的项目顺序为(time, date, values), 那么在插入数据时也一定要是(time, date, values)的顺序。</li>
 <li>(?,?,?,), (data, times, values): (?,?,?,) 表示待插入的数据是(Data, Times, Values)。</li>
 </ol>
 <p>在完成数据插入工作后。我们创建一个新的函数，从表格 stocks 来提取我们刚刚插入数据。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">select_form</span><span class="params">()</span>:</span></div><div class="line">    <span class="comment"># 从数据库中抓取表格</span></div><div class="line">    c.execute(<span class="string">'SELECT * FROM stocks'</span>)</div><div class="line">    c.fetchall()</div><div class="line">    <span class="keyword">for</span> row <span class="keyword">in</span> c.fetchall():  </div><div class="line">        print(row)</div></pre></td></tr></table></figure>
-<p>‘SELECT <em> FROM stocks’: 表示从表格中提取全部数据。如果我们将 ‘\</em>‘ 替换为某个具体的项目名称，则将从表格中提取那个项目对应的数据。例如, ‘SELECT data FROM stocks’。<br><strong>fetchone()</strong> 是从表格中抽取一行与之匹配的数据。<br><strong>fetchall()</strong> 是选取整个表格。这里的每一行都是一个tuple。</p>
-<h3 id="数据的批量插入"><a href="#数据的批量插入" class="headerlink" title="数据的批量插入"></a>数据的批量插入</h3><p>至此，我们已经介绍了如何想数据库的表格中插入数据。但是，有时数据量很大的时候，比如曾经我有想把整个的传感器网络的”txt”格式数据(54个传感器大概150Mb)输入数据库。单行输入几乎是不现实的。这种情况就需要批量(executemany()方法)插入了。</p>
+<p>‘SELECT * FROM stocks’: 表示从表格中提取全部数据。如果我们将 ‘*’ 替换为某个具体的项目名称，则将从表格中提取那个项目对应的数据。例如, ‘SELECT data FROM stocks’。 <strong>fetchone()</strong> 是从表格中抽取一行与之匹配的数据。 <strong>fetchall()</strong> 是选取整个表格。这里的每一行都是一个tuple。</p>
+<h3 id="数据的批量插入">数据的批量插入</h3>
+<p>至此，我们已经介绍了如何想数据库的表格中插入数据。但是，有时数据量很大的时候，比如曾经我有想把整个的传感器网络的“txt”格式数据(54个传感器大概150Mb)输入数据库。单行输入几乎是不现实的。这种情况就需要批量(executemany()方法)插入了。</p>
 <p>首先我们使用python打开文件</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">data = []</div><div class="line"><span class="keyword">with</span> open(<span class="keyword">with</span> open(<span class="string">".../example.txt"</span>, <span class="string">"r"</span>) <span class="keyword">as</span> Datas:</div><div class="line">    <span class="keyword">for</span> rows <span class="keyword">in</span> Datas:</div><div class="line">        data.append(rows)</div><div class="line">        <span class="keyword">if</span> len(data) &gt;= <span class="number">3000</span>:</div><div class="line">           data_ = tuple(data)</div><div class="line">           c.executemany(</div><div class="line">                <span class="string">'''INSERT INTO stocks VALUES (?, ?, ?)'''</span>, (data_))</div><div class="line">            c.commit()</div><div class="line">            data = []</div></pre></td></tr></table></figure>
 <p>这里利用了python强大的文本处理能力。我们首先将原始数据的每一行当成python中list的一个元素，添加到一个空list(<strong>data</strong>)之中。当这个data的长度 &gt;= 3000 时，我们就已经将3000行数据添加到了data这个list里面。然后我们将data转化成<strong>tuple</strong>，以为SQlite的插入操作要求数据的格式必须时tuple。接着我们执行 c.executemany(‘’’INSERT INTO stocks VALUES (?, ?, ?)’’’, (data_))。也就是一次性将3000行数据添加到数据库表格stocks中。最后，执行c.commit()保存操作，并且清空data。</p>
-<h2 id="SQLite3-数据更新"><a href="#SQLite3-数据更新" class="headerlink" title="SQLite3 数据更新"></a>SQLite3 数据更新</h2><p>接下来，我们要对表格中的数据进行更新。</p>
+<h2 id="sqlite3-数据更新">SQLite3 数据更新</h2>
+<p>接下来，我们要对表格中的数据进行更新。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">update_table</span><span class="params">()</span>:</span></div><div class="line">    c.execute(<span class="string">'UPDATE stocks SET value = 99 WHERE value = 3'</span>)</div><div class="line">    conn.commit()</div><div class="line">    c.execute(<span class="string">'SELECT * FROM stuffToPlot'</span>)</div><div class="line">    data = c.fetchall()</div></pre></td></tr></table></figure>
 <p>‘UPDATE stocks SET value = 99 WHERE value = 3’: 这段命令，是将表格stocks中 等于’3’的值，全部替换成’99’。</p>
-<h2 id="SQLite3-数据删除"><a href="#SQLite3-数据删除" class="headerlink" title="SQLite3 数据删除"></a>SQLite3 数据删除</h2><p>下面我们说明如何从SQLite3中删除数据。</p>
+<h2 id="sqlite3-数据删除">SQLite3 数据删除</h2>
+<p>下面我们说明如何从SQLite3中删除数据。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">c.execute(<span class="string">'DELETE FROM stocks WHERE value = 99'</span>)</div><div class="line">    conn.commit()</div></pre></td></tr></table></figure>
 <p>这样，我们就从数据库中删除了value=99的值。</p>
-<h2 id="SQLite3-数据排序"><a href="#SQLite3-数据排序" class="headerlink" title="SQLite3 数据排序"></a>SQLite3 数据排序</h2><p>此外我们还可以使用</p>
+<h2 id="sqlite3-数据排序">SQLite3 数据排序</h2>
+<p>此外我们还可以使用</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">c.execute(<span class="string">'SELECT * FROM stocks ORDER BY value'</span>):</div><div class="line">        print(row)</div></pre></td></tr></table></figure>
 <p>对表格中的数据进行排列(从小到大)</p>
-<h2 id="小节"><a href="#小节" class="headerlink" title="小节"></a>小节</h2><p>我们这里介绍了SQlite中数据的插入(批量插入)，数据库的更新以及数据库的数据删除。</p>
+<h2 id="小节">小节</h2>
+<p>我们这里介绍了SQlite中数据的插入(批量插入)，数据库的更新以及数据库的数据删除。</p>
 <p>下面我们给出单行数据插入的代码</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">import sqlite3</div><div class="line">import time</div><div class="line">import datetime</div><div class="line">import random</div><div class="line"></div><div class="line">def create_table():</div><div class="line">    c.execute'''CREATE TABLE IF NOT EXISTS stocks</div><div class="line">             (‘date text, time text, random value’)''')</div><div class="line"></div><div class="line">def insert_data():</div><div class="line">    Times = time.time()</div><div class="line">    Date = random.randrange(0,10) (str(datetime.datetime.fromtimestampt(times).strftime(%y-%m-%d %H:-%M:-%S, )))</div><div class="line">    Values =</div><div class="line">    c.execute("INSERT INTO stocks VALUES (date, time, values)",(?,?,?,), (Data, Times, Values))</div><div class="line">    conn.commit()</div><div class="line"></div><div class="line">create_table()</div><div class="line">for i in range(10):</div><div class="line">    insert_data()</div><div class="line">    time.sleep(1)</div><div class="line"></div><div class="line">c.close()</div><div class="line">conn.close()</div></pre></td></tr></table></figure>
 
@@ -511,8 +524,8 @@ random
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/11/19/SQLite/index/" rel="prev" title="SQLite">
-                SQLite <i class="fa fa-chevron-right"></i>
+              <a href="/2016/11/22/linearAlgebar/3-1/" rel="prev" title="Spaces of Vectors">
+                Spaces of Vectors <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -602,7 +615,7 @@ random
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -624,7 +637,7 @@ random
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -659,7 +672,7 @@ random
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#SQLite3-数据库插入"><span class="nav-number">1.</span> <span class="nav-text">SQLite3 数据库插入</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#单行数据插入"><span class="nav-number">1.1.</span> <span class="nav-text">单行数据插入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的批量插入"><span class="nav-number">1.2.</span> <span class="nav-text">数据的批量插入</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQLite3-数据更新"><span class="nav-number">2.</span> <span class="nav-text">SQLite3 数据更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQLite3-数据删除"><span class="nav-number">3.</span> <span class="nav-text">SQLite3 数据删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQLite3-数据排序"><span class="nav-number">4.</span> <span class="nav-text">SQLite3 数据排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小节"><span class="nav-number">5.</span> <span class="nav-text">小节</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#sqlite3-数据库插入"><span class="nav-number">1.</span> <span class="nav-text">SQLite3 数据库插入</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#单行数据插入"><span class="nav-number">1.1.</span> <span class="nav-text">单行数据插入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的批量插入"><span class="nav-number">1.2.</span> <span class="nav-text">数据的批量插入</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sqlite3-数据更新"><span class="nav-number">2.</span> <span class="nav-text">SQLite3 数据更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sqlite3-数据删除"><span class="nav-number">3.</span> <span class="nav-text">SQLite3 数据删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sqlite3-数据排序"><span class="nav-number">4.</span> <span class="nav-text">SQLite3 数据排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小节"><span class="nav-number">5.</span> <span class="nav-text">小节</span></a></li></ol></div>
             
 
           </div>

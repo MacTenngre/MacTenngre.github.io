@@ -87,19 +87,19 @@
 
 
 
-<meta name="description" content="本节主要讨论 子空间(subspace) 真实维度。一个由$n$个列向量组成的 $m \times n$的矩阵。其真实的维度(Dimension) 却并不一定是$n$。而是由线性无关的列向量(Independent columns) 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 基(basis)。
-(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间。换句话说，">
+<meta name="description" content="本节主要讨论 子空间(subspace) 真实维度。一个由\(n\)个列向量组成的 \(m \times n\)的矩阵。其真实的维度(Dimension) 却并不一定是\(n\)。而是由线性无关的列向量(Independent columns) 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 基(basis)。
+(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间">
 <meta property="og:type" content="article">
 <meta property="og:title" content="3.5 Independence, Basis and Dimension">
 <meta property="og:url" content="https://mactenngre.github.io/2016/11/14/linearAlgebar/3-5/index.html">
 <meta property="og:site_name" content="腾格里的天">
-<meta property="og:description" content="本节主要讨论 子空间(subspace) 真实维度。一个由$n$个列向量组成的 $m \times n$的矩阵。其真实的维度(Dimension) 却并不一定是$n$。而是由线性无关的列向量(Independent columns) 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 基(basis)。
-(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间。换句话说，">
+<meta property="og:description" content="本节主要讨论 子空间(subspace) 真实维度。一个由\(n\)个列向量组成的 \(m \times n\)的矩阵。其真实的维度(Dimension) 却并不一定是\(n\)。而是由线性无关的列向量(Independent columns) 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 基(basis)。
+(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间">
 <meta property="og:updated_time" content="2016-11-14T08:29:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="3.5 Independence, Basis and Dimension">
-<meta name="twitter:description" content="本节主要讨论 子空间(subspace) 真实维度。一个由$n$个列向量组成的 $m \times n$的矩阵。其真实的维度(Dimension) 却并不一定是$n$。而是由线性无关的列向量(Independent columns) 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 基(basis)。
-(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间。换句话说，">
+<meta name="twitter:description" content="本节主要讨论 子空间(subspace) 真实维度。一个由\(n\)个列向量组成的 \(m \times n\)的矩阵。其真实的维度(Dimension) 却并不一定是\(n\)。而是由线性无关的列向量(Independent columns) 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 基(basis)。
+(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间">
 
 
 
@@ -398,19 +398,22 @@
       
 
       
-        <p>本节主要讨论 <strong>子空间(subspace)</strong> 真实维度。一个由$n$个列向量组成的 $m \times n$的矩阵。其真实的<strong>维度(Dimension)</strong> 却并不一定是$n$。而是由<strong>线性无关的列向量(Independent columns)</strong> 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 <strong>基(basis)</strong>。</p>
+        <p>本节主要讨论 <strong>子空间(subspace)</strong> 真实维度。一个由<span class="math inline">\(n\)</span>个列向量组成的 <span class="math inline">\(m \times n\)</span>的矩阵。其真实的<strong>维度(Dimension)</strong> 却并不一定是<span class="math inline">\(n\)</span>。而是由<strong>线性无关的列向量(Independent columns)</strong> 的个数所决定的。下面我们使用列向量组来理解另一个重要的概念 <strong>基(basis)</strong>。</p>
 <p><strong>(基basis): 即线性无关的向量，并且可以延展(span)成为整个空间</strong>。换句话说，空间内的每一个向量都是这些 <strong>线性无关向量</strong> 的线性组合。</p>
-<h2 id="linear-Independence"><a href="#linear-Independence" class="headerlink" title="linear Independence"></a>linear Independence</h2><p>所谓线性独立，就是指 ${\bf Ax}＝0$只有$0$解。${\bf A}$ 的全部列向量的线性组合，只能给出<strong>零向量(zero vector)</strong>。也就是说 ${\bf A}$ 的 <strong>零空间(nullspace)</strong> 只包含唯一一个零向量。</p>
+<h2 id="linear-independence">linear Independence</h2>
+<p>所谓线性独立，就是指 <span class="math inline">\({\bf Ax}＝0\)</span>只有<span class="math inline">\(0\)</span>解。<span class="math inline">\({\bf A}\)</span> 的全部列向量的线性组合，只能给出<strong>零向量(zero vector)</strong>。也就是说 <span class="math inline">\({\bf A}\)</span> 的 <strong>零空间(nullspace)</strong> 只包含唯一一个零向量。</p>
 <p>例子</p>
-<ol>
+<ol style="list-style-type: decimal">
 <li>三个不在同一平面内的向量一定线性无关。</li>
 <li>如果三个向量在同一平面内他们线性相关。</li>
 </ol>
 <p>下面给出一个更广泛的定义，它可以应对在任何空间内的任意维度的向量组。如果我们将这些向量组视为列向量的话，那么下面的定义与上面的便完全相同。</p>
-<p><strong><em>定义：当且仅当向量组的线性组合只能给出零向量时，向量组是线性无关的。</em></strong><br>$$<br>x_1 v_1+x_2 v_2 +\dots +x_n v_n = {\bf 0};  \ x_1=x_2=\dots=x_n=0<br>$$</p>
+<p><strong><em>定义：当且仅当向量组的线性组合只能给出零向量时，向量组是线性无关的。</em></strong> <span class="math display">\[
+x_1 v_1+x_2 v_2 +\dots +x_n v_n = {\bf 0};  \\ x_1=x_2=\dots=x_n=0
+\]</span></p>
 <p>我们可以说一个向量组（矩阵的列／行向量组）是线性无关的，而不能说这个矩阵是线性无关的。从nullspace的角度来看就是，nullspace内存在一个非零向量，那么列向量组线性相关。</p>
-<p>进而可以得出一个概念－－－<strong>FULL column rank</strong>，即 ${\bf A}$ 的列向量组一定是线性无关的，当矩阵的秩（rank）$r=n$。其中 $n$是列向量的个数。因为 ${\bf A}$ 中有 $n$个 $pivots$（阶梯矩阵中行中第一个不为零的数）。这样就没有自由变量，从而只有零解。</p>
-<p>根据上面的概念，我们还可以推出另一个概念。与上面的相反。就是当 ${\bf A}$ 的行的数目 $m$ 小于 列的数目 $n$ 时。构成 ${\bf A}$ 的向量组一定是<strong>线性相关的</strong>。</p>
+<p>进而可以得出一个概念－－－<strong>FULL column rank</strong>，即 <span class="math inline">\({\bf A}\)</span> 的列向量组一定是线性无关的，当矩阵的秩（rank）<span class="math inline">\(r=n\)</span>。其中 <span class="math inline">\(n\)</span>是列向量的个数。因为 <span class="math inline">\({\bf A}\)</span> 中有 <span class="math inline">\(n\)</span>个 <span class="math inline">\(pivots\)</span>（阶梯矩阵中行中第一个不为零的数）。这样就没有自由变量，从而只有零解。</p>
+<p>根据上面的概念，我们还可以推出另一个概念。与上面的相反。就是当 <span class="math inline">\({\bf A}\)</span> 的行的数目 <span class="math inline">\(m\)</span> 小于 列的数目 <span class="math inline">\(n\)</span> 时。构成 <span class="math inline">\({\bf A}\)</span> 的向量组一定是<strong>线性相关的</strong>。</p>
 
       
     </div>
@@ -452,10 +455,6 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-            
-              <a href="/1970/01/01/index/" rel="next" title="Markdown的写作技巧">
-                <i class="fa fa-chevron-left"></i> Markdown的写作技巧
-              </a>
             
           </div>
 
@@ -554,7 +553,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -576,7 +575,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -611,7 +610,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#linear-Independence"><span class="nav-number">1.</span> <span class="nav-text">linear Independence</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#linear-independence"><span class="nav-number">1.</span> <span class="nav-text">linear Independence</span></a></li></ol></div>
             
 
           </div>
