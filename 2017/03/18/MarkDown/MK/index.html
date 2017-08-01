@@ -377,40 +377,37 @@
       
 
       
-        <h2>Markdown公式编辑</h2>
+        <h2 id="markdown公式编辑">Markdown公式编辑</h2>
 <p>简单介绍如何使Markdown能够按照 <strong>Latex</strong> 样式进行公式编辑。但是，在没有安装任何插件之前 Hexo 是无法将公式转换成 <strong>Latex</strong> 样式进的。我们需要 MathJax 插件。</p>
-<ol>
+<ol style="list-style-type: decimal">
 <li>在MacOs系统下打开 terminal，并且利用 terminal 进入 hexo 所在的文件夹。</li>
 <li>输入: <code>npm install hexo-math --save</code> 安装插件。</li>
 <li>打开 <strong>主题</strong> 样式控制文件 “_config.yml”。找到 MathJax，并修改值 <code>enable: true</code></li>
 </ol>
-<p><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">mathjax:</div><div class="line">enable: true</div><div class="line">per_page: true</div><div class="line">cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-</div><div class="line">MML_HTMLorMML</div></pre></td></tr></table></figure></p>
-<p>之后就可以按照latex的样式编辑公式了。<a href="https://www.zybuluo.com/codeep/note/163962#1%E5%A6%82%E4%BD%95%E8%BE%93%E5%85%A5%E4%B8%80%E4%B8%AA%E6%96%B9%E7%A8%8B%E5%BC%8F%E5%BA%8F%E5%88%97,%22%E5%85%AC%E5%BC%8F%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C%22" target="_blank" rel="external">Markdown 公式指导手册</a>，有很多实际例子。<a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/" title="MathJax" target="_blank" rel="external">MathJax</a>查看更多公式说明。</p>
-<h2>更换 Pandoc 渲染器</h2>
-<p>hexo 默认的渲染器是 marked (hexo-renderer-marked) 渲染器。但该渲染器不支持脚注<a href="%5BHexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BB%8B%E7%BB%8D%5D(https://maxchendt.github.io/Blog/20160907HexoSet.html#fn2)">^1</a>渲染。因此需要更换一个渲染器。推荐使用  <a href="http://pandoc.org/installing.html" target="_blank" rel="external"><em>pandoc</em></a> 进行渲染。Mac Os系统下要确认你已经安装过 <em>pandoc</em>。使用<code>brew install pandoc</code>安装。之后，使用 terminal 进入 Hexo 文件夹内进行以下操作。</p>
-<ol>
-<li>npm un hexo-renderer-marked --save 卸载默认渲染器</li>
-<li>npm install hexo-renderer-pandoc --save</li>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">mathjax:</div><div class="line">enable: true</div><div class="line">per_page: true</div><div class="line">cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-</div><div class="line">MML_HTMLorMML</div></pre></td></tr></table></figure>
+<p>之后就可以按照latex的样式编辑公式了。<a href="https://www.zybuluo.com/codeep/note/163962#1如何输入一个方程式序列,%22公式指导手册%22" target="_blank" rel="external">Markdown 公式指导手册</a>，有很多实际例子。<a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/" title="MathJax" target="_blank" rel="external">MathJax</a>查看更多公式说明。</p>
+<h2 id="更换-pandoc-渲染器">更换 Pandoc 渲染器</h2>
+<p>hexo 默认的渲染器是 marked (hexo-renderer-marked) 渲染器。但该渲染器不支持脚注<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>渲染。因此需要更换一个渲染器。推荐使用 <a href="http://pandoc.org/installing.html" target="_blank" rel="external"><em>pandoc</em></a> 进行渲染。Mac Os系统下要确认你已经安装过 <em>pandoc</em>。使用<code>brew install pandoc</code>安装。之后，使用 terminal 进入 Hexo 文件夹内进行以下操作。</p>
+<ol style="list-style-type: decimal">
+<li>npm un hexo-renderer-marked –save 卸载默认渲染器</li>
+<li>npm install hexo-renderer-pandoc –save</li>
 </ol>
-<h2>Markdown Preview</h2>
-<p>在 sublime 3 下使用 Markdown Preview 插件可以生成预览。首先使用 sublime 3 <a href="https://github.com/revolunet/sublimetext-markdown-preview" target="_blank" rel="external">安装 Markdown Preview</a>。
-之后要进行一些设定才可以使用。</p>
-<ol>
-<li>
-<p>打开 <em>Preference-&gt;Package Settings-&gt;Markdown Preview-&gt;user-setting</em></p>
-</li>
-<li>
-<p>添加一下属性
-<figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"browser"</span>: <span class="string">"/Applications/Google Chrome.app"</span>,</div><div class="line">    <span class="attr">"parser"</span>: <span class="string">"markdown"</span>,</div><div class="line">    <span class="attr">"enable_mathjax"</span>: <span class="literal">true</span>,</div><div class="line">    <span class="attr">"image_path_conversion"</span>: <span class="string">"none"</span>,</div><div class="line">    <span class="attr">"path_tempfile"</span>: <span class="string">"./"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-</li>
-<li>
-<p>打开 <em>Preference-&gt;Key Bindings</em> 添加
-<figure class="highlight json"><table><tr><td class="code"><pre><div class="line">[</div><div class="line">    &#123; <span class="attr">"keys"</span>: [<span class="string">"alt+m"</span>],</div><div class="line">      <span class="attr">"command"</span>: <span class="string">"markdown_preview"</span>,</div><div class="line">      <span class="attr">"args"</span>: &#123;<span class="attr">"target"</span>: <span class="string">"browser"</span>, <span class="attr">"parser"</span>:<span class="string">"markdown"</span>&#125; &#125;</div><div class="line">]</div></pre></td></tr></table></figure></p>
-</li>
+<h2 id="markdown-preview">Markdown Preview</h2>
+<p>在 sublime 3 下使用 Markdown Preview 插件可以生成预览。首先使用 sublime 3 <a href="https://github.com/revolunet/sublimetext-markdown-preview" target="_blank" rel="external">安装 Markdown Preview</a>。 之后要进行一些设定才可以使用。</p>
+<ol style="list-style-type: decimal">
+<li>打开 <em>Preference-&gt;Package Settings-&gt;Markdown Preview-&gt;user-setting</em></li>
+<li><p>添加一下属性 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"browser"</span>: <span class="string">"/Applications/Google Chrome.app"</span>,</div><div class="line">    <span class="attr">"parser"</span>: <span class="string">"markdown"</span>,</div><div class="line">    <span class="attr">"enable_mathjax"</span>: <span class="literal">true</span>,</div><div class="line">    <span class="attr">"image_path_conversion"</span>: <span class="string">"none"</span>,</div><div class="line">    <span class="attr">"path_tempfile"</span>: <span class="string">"./"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p></li>
+<li><p>打开 <em>Preference-&gt;Key Bindings</em> 添加 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">[</div><div class="line">    &#123; <span class="attr">"keys"</span>: [<span class="string">"alt+m"</span>],</div><div class="line">      <span class="attr">"command"</span>: <span class="string">"markdown_preview"</span>,</div><div class="line">      <span class="attr">"args"</span>: &#123;<span class="attr">"target"</span>: <span class="string">"browser"</span>, <span class="attr">"parser"</span>:<span class="string">"markdown"</span>&#125; &#125;</div><div class="line">]</div></pre></td></tr></table></figure></p></li>
 </ol>
 <p>完成后同时按下 <em>alt+m</em> 就可以在浏览器生成预览了。</p>
-<h2>Hexo 代码区块的问题</h2>
+<h2 id="hexo-代码区块的问题">Hexo 代码区块的问题</h2>
 <p>MarkDown 中代码区块是使用三个<code>`</code>来表示代码区块的开始。但是在行中要是使用 两个<code>`</code>来表示代码的开始。</p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn1"><p><a href="https://maxchendt.github.io/Blog/20160907HexoSet.html#fn2" target="_blank" rel="external">Hexo博客搭建介绍</a><a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
 
       
     </div>
@@ -456,6 +453,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/01/page/" rel="prev" title="page">
+                page <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -544,7 +545,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -601,7 +602,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Markdown公式编辑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">更换 Pandoc 渲染器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">Markdown Preview</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">Hexo 代码区块的问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown公式编辑"><span class="nav-number">1.</span> <span class="nav-text">Markdown公式编辑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换-pandoc-渲染器"><span class="nav-number">2.</span> <span class="nav-text">更换 Pandoc 渲染器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown-preview"><span class="nav-number">3.</span> <span class="nav-text">Markdown Preview</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-代码区块的问题"><span class="nav-number">4.</span> <span class="nav-text">Hexo 代码区块的问题</span></a></li></ol></div>
             
 
           </div>
