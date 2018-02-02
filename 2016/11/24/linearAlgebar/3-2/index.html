@@ -87,19 +87,25 @@
 
 
 
-<meta name="description" content="Nullspace of \({\bf A}\): Solving \({\bf Ax=0}\)
-一个\(m \times n\)的矩阵 \({\bf A}\)(方阵或长方形矩阵)。若 \({\bf A}\) 不可逆，则 \({\bf Ax=0}\) 只有零解，列空间线性无关。若 \({\bf A}\) 可逆则存在非零解。这些非零解属于 \({\bf A}\) 的 零空间(nullspace)。">
+<meta name="description" content="Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$
+一个$m \times n$的矩阵 ${\bf A}$(方阵或长方形矩阵)。若 ${\bf A}$ 不可逆，则 ${\bf Ax=0}$ 只有零解，列空间线性无关。若 ${\bf A}$ 可逆则存在非零解。这些非零解属于 ${\bf A}$ 的 零空间(nullspace)。
+
+The nullspace o">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nullspace of A">
 <meta property="og:url" content="https://mactenngre.github.io/2016/11/24/linearAlgebar/3-2/index.html">
 <meta property="og:site_name" content="腾格里的天">
-<meta property="og:description" content="Nullspace of \({\bf A}\): Solving \({\bf Ax=0}\)
-一个\(m \times n\)的矩阵 \({\bf A}\)(方阵或长方形矩阵)。若 \({\bf A}\) 不可逆，则 \({\bf Ax=0}\) 只有零解，列空间线性无关。若 \({\bf A}\) 可逆则存在非零解。这些非零解属于 \({\bf A}\) 的 零空间(nullspace)。">
+<meta property="og:description" content="Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$
+一个$m \times n$的矩阵 ${\bf A}$(方阵或长方形矩阵)。若 ${\bf A}$ 不可逆，则 ${\bf Ax=0}$ 只有零解，列空间线性无关。若 ${\bf A}$ 可逆则存在非零解。这些非零解属于 ${\bf A}$ 的 零空间(nullspace)。
+
+The nullspace o">
 <meta property="og:updated_time" content="2017-03-18T04:25:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nullspace of A">
-<meta name="twitter:description" content="Nullspace of \({\bf A}\): Solving \({\bf Ax=0}\)
-一个\(m \times n\)的矩阵 \({\bf A}\)(方阵或长方形矩阵)。若 \({\bf A}\) 不可逆，则 \({\bf Ax=0}\) 只有零解，列空间线性无关。若 \({\bf A}\) 可逆则存在非零解。这些非零解属于 \({\bf A}\) 的 零空间(nullspace)。">
+<meta name="twitter:description" content="Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$
+一个$m \times n$的矩阵 ${\bf A}$(方阵或长方形矩阵)。若 ${\bf A}$ 不可逆，则 ${\bf Ax=0}$ 只有零解，列空间线性无关。若 ${\bf A}$ 可逆则存在非零解。这些非零解属于 ${\bf A}$ 的 零空间(nullspace)。
+
+The nullspace o">
 
 
 
@@ -398,53 +404,62 @@
       
 
       
-        <h2 id="nullspace-of-bf-a-solving-bf-ax0">Nullspace of <span class="math inline">\({\bf A}\)</span>: Solving <span class="math inline">\({\bf Ax=0}\)</span></h2>
-<p>一个<span class="math inline">\(m \times n\)</span>的矩阵 <span class="math inline">\({\bf A}\)</span>(方阵或长方形矩阵)。若 <span class="math inline">\({\bf A}\)</span> 不可逆，则 <span class="math inline">\({\bf Ax=0}\)</span> 只有零解，列空间线性无关。若 <span class="math inline">\({\bf A}\)</span> 可逆则存在非零解。这些非零解属于 <span class="math inline">\({\bf A}\)</span> 的 <strong>零空间(nullspace)</strong>。</p>
+        <h2>Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$</h2>
+<p>一个$m \times n$的矩阵 ${\bf A}$(方阵或长方形矩阵)。若 ${\bf A}$ 不可逆，则 ${\bf Ax=0}$ 只有零解，列空间线性无关。若 ${\bf A}$ 可逆则存在非零解。这些非零解属于 ${\bf A}$ 的 <strong>零空间(nullspace)</strong>。</p>
 <blockquote>
-<p>The nullspace of <span class="math inline">\({\bf A}\)</span> consists of all solutions to <span class="math inline">\({\bf Ax=0}\)</span>. <strong>These vectors x are in <span class="math inline">\({\bf R}^n\)</span></strong>.The nullspace containing all solutions of <span class="math inline">\({\bf Ax=0}\)</span> is denoted by <span class="math inline">\({\bf N(A)}\)</span>.</p>
+<p>The nullspace of ${\bf A}$ consists of all solutions to ${\bf Ax=0}$. <strong>These vectors x are in ${\bf R}^n$</strong>.The nullspace containing all solutions of ${\bf Ax=0}$ is denoted by ${\bf N(A)}$.</p>
 </blockquote>
-<p><span class="math inline">\({\bf Ax=0}\)</span> 的解向量构成一个子空间。因为解满足子空间的两条性质。例如，<span class="math inline">\({\bf Ax=0}\)</span>，<span class="math inline">\({\bf Ay=0}\)</span> 那么，<span class="math inline">\({\bf A(x+y)=0}\)</span>。<span class="math inline">\(c{\bf A}{\bf x=0}\)</span>。因此，<span class="math inline">\({\bf x+y}\)</span> 和️ <span class="math inline">\(c{\bf x}\)</span> 都在nullspace内。</p>
+<p>${\bf Ax=0}$ 的解向量构成一个子空间。因为解满足子空间的两条性质。例如，${\bf Ax=0}$，${\bf Ay=0}$ 那么，${\bf A(x+y)=0}$。$c{\bf A}{\bf x=0}$。因此，${\bf x+y}$ 和️ $c{\bf x}$ 都在nullspace内。</p>
 <blockquote>
 <ul>
-<li>要注意 <span class="math inline">\({\bf A}\)</span> 的nullspace构成一个 <span class="math inline">\({\bf R}^{n}\)</span> 的子空间。</li>
-<li><span class="math inline">\({\bf A}\)</span> 的列向量构成一个 <span class="math inline">\({\bf R}^{m}\)</span> 的子空间。</li>
+<li>要注意 ${\bf A}$ 的nullspace构成一个 ${\bf R}^{n}$ 的子空间。</li>
+<li>${\bf A}$ 的列向量构成一个 ${\bf R}^{m}$ 的子空间。</li>
 </ul>
 </blockquote>
-<h4 id="特解special-solution">特解(special solution)</h4>
-<span>${\bf A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 6 \\ \end{bmatrix}$</span><!-- Has MathJax -->
-<p>方程 <span class="math inline">\({\bf Ax=0}\)</span> 的解可以用特解表示。首先化简矩阵成为行最简。 <span>$$$$
+<h4>特解(special solution)</h4>
+<p><span>${\bf A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 6 \\ \end{bmatrix}$</span><!-- Has MathJax -->方程 ${\bf Ax=0}$ 的解可以用特解表示。首先化简矩阵成为行最简。
+<span>$$$$
 \begin{align}
 x_{1}+2x_{2} &amp; =0 \\
 {\bf 0} &amp; = 0
 \end{align}
-$$$$</span><!-- Has MathJax --> 实际上，上面的方程组只有一个方程。方程2是方程1的两倍。这两个方程都在 <span class="math inline">\({\bf A}\)</span> 的 nullspace 上面。此方中， nullspace是一条线。 我们取线上特殊的一个点。若<span>$x_{2}＝1$</span><!-- Has MathJax -->，那么<span>$x_{1}＝－2$</span><!-- Has MathJax -->。我们称这个解为 <strong>特解(special solution)</strong>。 那么，其他全部在这条直线上的解，都是特解 <span class="math inline">\((-2, 1)\)</span> 的倍数(线性组合)。</p>
+$$$$</span><!-- Has MathJax -->
+实际上，上面的方程组只有一个方程。方程2是方程1的两倍。这两个方程都在 ${\bf A}$ 的 nullspace 上面。此方中， nullspace是一条线。
+我们取线上特殊的一个点。若<span>$x_{2}＝1$</span><!-- Has MathJax -->，那么<span>$x_{1}＝－2$</span><!-- Has MathJax -->。我们称这个解为 <strong>特解(special solution)</strong>。 那么，其他全部在这条直线上的解，都是特解 $(-2, 1)$ 的倍数(线性组合)。</p>
 <blockquote>
 <ul>
-<li>The nullspace consists of all combinations of the special solutions. <span class="math display">\[特解的全部线性组合构成了nullspace。\]</span></li>
+<li>The nullspace consists of all combinations of the special solutions.
+$$特解的全部线性组合构成了nullspace。$$</li>
 </ul>
 </blockquote>
-<h4 id="pivot-and-free-variable">Pivot and Free variable</h4>
-<p>求矩阵<span class="math inline">\(A = \begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix}\)</span>的nullspace。令，<span>$\begin{bmatrix}1 &amp; 2 &amp; 3 \end{bmatrix}\begin{bmatrix}x \\ y \\ z \end{bmatrix}= 0$</span><!-- Has MathJax -->。那么特解为: <span>$$s_{1}=\begin{bmatrix}-2 \\ 1 \\ 0 \end{bmatrix}
+<h4>Pivot and Free variable</h4>
+<p>求矩阵$A = \begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix}$的nullspace。令，<span>$\begin{bmatrix}1 &amp; 2 &amp; 3 \end{bmatrix}\begin{bmatrix}x \\ y \\ z \end{bmatrix}= 0$</span><!-- Has MathJax -->。那么特解为:
+<span>$$s_{1}=\begin{bmatrix}-2 \\ 1 \\ 0 \end{bmatrix}
 \ ,
 s_{2}=\begin{bmatrix}-3 \\ 0 \\ 1 \end{bmatrix}$$</span><!-- Has MathJax --></p>
-<p><span class="math inline">\(\begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix}\)</span>中第一列中不为零的元素称为<strong>pivot</strong>。在矩阵的列和行中首个不为零的元素为pivot。也就是说pivot由上三角矩阵确定。 因此，第一个元素不是自由变量。我们选取后两个元素为自由变量，因此存在两个特解。分别使这两个自由变量等于1和0。从而求出特解。</p>
+<p>$\begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix}$中第一列中不为零的元素称为<strong>pivot</strong>。在矩阵的列和行中首个不为零的元素为pivot。也就是说pivot由上三角矩阵确定。
+因此，第一个元素不是自由变量。我们选取后两个元素为自由变量，因此存在两个特解。分别使这两个自由变量等于1和0。从而求出特解。</p>
 <blockquote>
 <ul>
-<li>矩阵的列数一定时，行数是nullsapce的限制条件。行数越多，限制条件也就越多。当行数大于列数时，可能不存在自由变量。当不存在自由变量时，<span class="math inline">\({\bf Ax=0}\)</span> 便没有特解，只有零解。</li>
+<li>矩阵的列数一定时，行数是nullsapce的限制条件。行数越多，限制条件也就越多。当行数大于列数时，可能不存在自由变量。当不存在自由变量时，${\bf Ax=0}$ 便没有特解，只有零解。</li>
 <li>矩阵行数一定。当列数大于行数时至少存在一个自由变量。</li>
 </ul>
 </blockquote>
 <p>我们可以通过行变换来获得上三角矩阵。并且可以进一步化简上三角矩阵。</p>
 <blockquote>
-<ol style="list-style-type: decimal">
+<ol>
 <li>使pivot上面的元素为零</li>
 <li>使pivot位置的元素为1</li>
 </ol>
 </blockquote>
-<p>这样化简的矩阵称为 <strong>行最简(reduced row echelon form R)</strong>。解方程的步骤可以分为两步 1. 利用行变换化简消元，使矩阵变成行最简形式。 2. 确定pivot和自由变量。给自由变量付值(1 or 0)。回带自由变量求出pivot。</p>
-<h4 id="小节">小节</h4>
-<p>当 <span class="math inline">\({\bf Ax=0}\)</span> 只有零解时，nullspace是 <span class="math inline">\({\bf Z}\)</span>。这是一个重要的信号，矩阵 <span class="math inline">\({\bf A}\)</span> 中的列向量线性无关。以及揭示了其他重要的性质关于基，维度等。</p>
-<p><span class="math inline">\({\bf Ax=0}\)</span>的完全解是由特解的线性组合来表达的。特解属于矩阵<span class="math inline">\(A\)</span>的nullspace空间，特解的线性组合填满了整个nullspace。从而构成了<span class="math inline">\({\bf Ax=0}\)</span>的完全解。</p>
+<p>这样化简的矩阵称为 <strong>行最简(reduced row echelon form R)</strong>。解方程的步骤可以分为两步</p>
+<ol>
+<li>利用行变换化简消元，使矩阵变成行最简形式。</li>
+<li>确定pivot和自由变量。给自由变量付值(1 or 0)。回带自由变量求出pivot。</li>
+</ol>
+<h4>小节</h4>
+<p>当 ${\bf Ax=0}$ 只有零解时，nullspace是 ${\bf Z}$。这是一个重要的信号，矩阵 ${\bf A}$ 中的列向量线性无关。以及揭示了其他重要的性质关于基，维度等。</p>
+<p>${\bf Ax=0}$的完全解是由特解的线性组合来表达的。特解属于矩阵$A$的nullspace空间，特解的线性组合填满了整个nullspace。从而构成了${\bf Ax=0}$的完全解。</p>
 
       
     </div>
@@ -645,7 +660,7 @@ s_{2}=\begin{bmatrix}-3 \\ 0 \\ 1 \end{bmatrix}$$</span><!-- Has MathJax --></p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#nullspace-of-bf-a-solving-bf-ax0"><span class="nav-number">1.</span> <span class="nav-text">Nullspace of \({\bf A}\): Solving \({\bf Ax=0}\)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特解special-solution"><span class="nav-number">1.0.1.</span> <span class="nav-text">特解(special solution)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#pivot-and-free-variable"><span class="nav-number">1.0.2.</span> <span class="nav-text">Pivot and Free variable</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#小节"><span class="nav-number">1.0.3.</span> <span class="nav-text">小节</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Nullspace of ${\bf A}$: Solving ${\bf Ax=0}$</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.1.</span> <span class="nav-text">特解(special solution)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.2.</span> <span class="nav-text">Pivot and Free variable</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.3.</span> <span class="nav-text">小节</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -668,7 +683,7 @@ s_{2}=\begin{bmatrix}-3 \\ 0 \\ 1 \end{bmatrix}$$</span><!-- Has MathJax --></p>
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
